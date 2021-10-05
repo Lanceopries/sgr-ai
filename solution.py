@@ -4,6 +4,11 @@ from flask import request
 
 app = flask.Flask(__name__)
 
+# A welcome message to test our server
+@app.route('/')
+def index():
+    return "<h1>DDD</h1>"
+
 @app.route('/ping')
 def ping():
     result = {'status': 'ok'}
