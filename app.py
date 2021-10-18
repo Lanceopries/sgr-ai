@@ -7,7 +7,7 @@ app = flask.Flask(__name__)
 # A welcome message to test our server
 @app.route('/')
 def index():
-    return "<h1>DDD</h1>"
+    return "<h1>Dragons Recommend System for Startups</h1>"
 
 @app.route('/ping')
 def ping():
@@ -15,14 +15,14 @@ def ping():
     return result
 
 
-@app.route('/query', methods=['POST'])
+@app.route('/easyrecommend', methods=['POST'])
 def query():
     data = json.loads(request.json)
 
     return data
 
 
-@app.route('/update_index', methods=['POST'])
+@app.route('/personrecommend', methods=['POST'])
 def update_index():
     data = json.loads(request.json)
 
