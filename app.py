@@ -1,25 +1,7 @@
 import json
 import flask
 import pandas as pd
-import numpy as np
 from flask import request
-import os
-import openpyxl
-
-#
-# cwd = os.getcwd()  # Get the current working directory (cwd)
-# files = os.listdir(cwd)  # Get all the files in that directory
-# print("Files in %r: %s" % (cwd, files))
-
-# companies_dict = pd.read_excel('D:\heroku_test\Companies.xlsx', sheet_name=None)
-# deals_dict = pd.read_excel('D:\heroku_test\Deals.xlsx', sheet_name=None)
-# services_dict = pd.read_excel('D:\heroku_test\Services.xlsx', sheet_name=None)
-
-# companies_dict = pd.read_excel('Companies.xlsx', sheet_name=None)
-# deals_dict = pd.read_excel('Deals.xlsx', sheet_name=None)
-# services_dict = pd.read_excel('Services.xlsx', sheet_name=None)
-
-# main_df = companies_dict['Датасет']
 
 # engi_centres_services_df = services_dict['Список инжиниринговых центров'][['Название объекта', 'Рынок', 'Технологии', 'Сервисы']]
 # engi_centres_services_df = pd.read_csv('D:\heroku_test\engi_centres_services.csv')
