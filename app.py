@@ -1,6 +1,18 @@
 import json
 import flask
+import pandas as pd
+import numpy as np
+import sklearn
 from flask import request
+
+
+companies_dict = pd.read_excel('Companies.xlsx', sheet_name=None)
+deals_dict = pd.read_excel('Deals.xlsx', sheet_name=None)
+services_dict = pd.read_excel('Services.xlsx', sheet_name=None)
+
+main_df = companies_dict['Датасет']
+
+
 
 app = flask.Flask(__name__)
 
