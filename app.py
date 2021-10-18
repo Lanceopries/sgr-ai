@@ -15,13 +15,15 @@ import openpyxl
 # deals_dict = pd.read_excel('D:\heroku_test\Deals.xlsx', sheet_name=None)
 # services_dict = pd.read_excel('D:\heroku_test\Services.xlsx', sheet_name=None)
 
-companies_dict = pd.read_excel('Companies.xlsx', sheet_name=None)
-deals_dict = pd.read_excel('Deals.xlsx', sheet_name=None)
-services_dict = pd.read_excel('Services.xlsx', sheet_name=None)
+# companies_dict = pd.read_excel('Companies.xlsx', sheet_name=None)
+# deals_dict = pd.read_excel('Deals.xlsx', sheet_name=None)
+# services_dict = pd.read_excel('Services.xlsx', sheet_name=None)
 
-main_df = companies_dict['Датасет']
+# main_df = companies_dict['Датасет']
 
-engi_centres_services_df = services_dict['Список инжиниринговых центров'][['Название объекта', 'Рынок', 'Технологии', 'Сервисы']]
+# engi_centres_services_df = services_dict['Список инжиниринговых центров'][['Название объекта', 'Рынок', 'Технологии', 'Сервисы']]
+# engi_centres_services_df = pd.read_csv('D:\heroku_test\engi_centres_services.csv')
+engi_centres_services_df = pd.read_csv('./engi_centres_services.csv')
 
 app = flask.Flask(__name__)
 
