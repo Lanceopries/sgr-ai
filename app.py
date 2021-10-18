@@ -2,7 +2,6 @@ import json
 import flask
 import pandas as pd
 import numpy as np
-import sklearn
 from flask import request
 import os
 
