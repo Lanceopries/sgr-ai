@@ -7,7 +7,7 @@ from flask_cors import CORS, cross_origin
 # global dict for all data
 data_dict = {}
 
-HEROKU_ON = False
+HEROKU_ON = True
 
 DATA_LOADED = False
 
@@ -29,7 +29,7 @@ def init_data():
     global DATA_LOADED
 
     if HEROKU_ON:
-        path = './'
+        path = ''
     else:
         path = 'D:\heroku_test\\'
 
