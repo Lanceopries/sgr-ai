@@ -66,7 +66,7 @@ def ping():
 # 'Бизнес-модель для Инновационных компаний'
 @app.route('/api/easyrecommend', methods=['POST'])
 def query():
-    data = json.loads(request.json)
+    data = request.json
 
     engi_score = pd.Series(np.zeros(len(data_dict['engi_centres_services_df']['Рынок']))).astype(int)
 
