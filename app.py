@@ -3,6 +3,7 @@ import flask
 import pandas as pd
 from flask import request
 from flask_cors import CORS, cross_origin
+import numpy as np
 
 # global dict for all data
 data_dict = {}
@@ -66,10 +67,18 @@ def ping():
 @app.route('/api/easyrecommend', methods=['POST'])
 def query():
     data = json.loads(request.json)
-    engi_score = data_dict['engi_centres_services_df']['Рынок'].apply(lambda x: x.find('Healthcare') >= 0).astype(int)
-    filtered_result = data_dict['engi_centres_services_df'][mask]
+
+    engi_score = pd.Series(np.zeros(len(data_dict['engi_centres_services_df']['Рынок']))).astype(int)
+
+    for market_type in data['start_up']['market_type']:
+        engi_score += data_dict['engi_centres_services_df']['Рынок'].apply(lambda x: x.find(market_type) >= 0).astype(int)
+
+    placeholder_copy = data_dict['engi_centres_services_df'].copy()
+    placeholder_copy['rating'] = engi_score
+
+    filtered_result = placeholder_copy.sort_values('rating', ascending=False).iloc[:10]
     if filtered_result.size >= 0:
-        result = data_dict['engi_centres_services_df'][mask]['Название объекта'].to_numpy().tolist()
+        result = filtered_result['Название объекта'].to_numpy().tolist()
     else:
         result = 'Рекомендаций нет'
 
