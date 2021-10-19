@@ -3,9 +3,12 @@ import flask
 import pandas as pd
 from flask import request
 
-# engi_centres_services_df = services_dict['Список инжиниринговых центров'][['Название объекта', 'Рынок', 'Технологии', 'Сервисы']]
-# engi_centres_services_df = pd.read_csv('D:\heroku_test\engi_centres_services.csv')
-engi_centres_services_df = pd.read_csv('./engi_centres_services.csv')
+# global dict for all data
+data_dict = {}
+
+HEROKU_ON = False
+
+DATA_LOADED = False
 
 app = flask.Flask(__name__)
 
@@ -14,15 +17,41 @@ app = flask.Flask(__name__)
 def index():
     return "<h1>Dragons Recommend System for Startups</h1>"
 
-@app.route('/ping')
-def ping():
+
+# initialization
+@app.route('/init')
+def init_data():
+
+    global HEROKU_ON
+    global DATA_LOADED
+
+    if HEROKU_ON:
+        path = './'
+    else:
+        path = 'D:\heroku_test\\'
+
+    data_dict['engi_centres_services_df'] = pd.read_csv(path + 'engi_centres_services.csv')
+    data_dict['accelerator_services_df'] = pd.read_csv(path + 'accelerators_services.csv')
+    data_dict['business_incubs_services_df'] = pd.read_csv(path + 'business_incubs.csv')
+    data_dict['institutes_services_df'] = pd.read_csv(path + 'institutes.csv')
+    data_dict['pilot_services_df'] = pd.read_csv(path + 'pilot.csv')
+    data_dict['venture_fond_services_df'] = pd.read_csv(path + 'venture_fond_services.csv')
+
+    DATA_LOADED = True
+
     result = {'status': 'ok'}
     return result
 
 
-@app.route('/test_df')
-def test_df():
-    result = {'status': 'ok'}
+@app.route('/ping')
+def ping():
+
+    global DATA_LOADED
+
+    if DATA_LOADED:
+        result = {'status': 'ok'}
+    else:
+        result = {'status': 'data not loaded'}
     return result
 
 
@@ -31,17 +60,17 @@ def test_df():
 # "Фильтр 'Рынок' для Инновационных компаний",
 # "Фильтр 'Технологии' для Инновационных компаний",
 # 'Бизнес-модель для Инновационных компаний'
-@app.route('/easyrecommend', methods=['POST'])
-def query():
-    data = json.loads(request.json)
-    mask = engi_centres_services_df['Рынок'].apply(lambda x: x.find('Healthcare') >= 0)
-    filtered_result = engi_centres_services_df[mask]
-    if filtered_result.size >= 0:
-        result = engi_centres_services_df[mask]['Название объекта'].to_numpy().tolist()
-    else:
-        result = 'Рекомендаций нет'
-
-    return flask.jsonify(result)
+# @app.route('/easyrecommend', methods=['POST'])
+# def query():
+#     data = json.loads(request.json)
+#     mask = engi_centres_services_df['Рынок'].apply(lambda x: x.find('Healthcare') >= 0)
+#     filtered_result = engi_centres_services_df[mask]
+#     if filtered_result.size >= 0:
+#         result = engi_centres_services_df[mask]['Название объекта'].to_numpy().tolist()
+#     else:
+#         result = 'Рекомендаций нет'
+#
+#     return flask.jsonify(result)
 
 
 # 'Сервис',
@@ -65,11 +94,13 @@ def query():
 # ' Опубликован на Навигаторе по стартап-экосистеме Москвы (navigator.innoagency.ru/main/list-company)',
 # 'Инновационная компания',
 # 'Стартап'
-@app.route('/personrecommend', methods=['POST'])
-def update_index():
-    data = json.loads(request.json)
+# @app.route('/personrecommend', methods=['POST'])
+# def update_index():
+#     data = json.loads(request.json)
+#
+#     return data
 
-    return data
+
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
