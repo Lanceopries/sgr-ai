@@ -16,13 +16,13 @@ cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 # A welcome message to test our server
-@app.route('/')
+@app.route('/api/')
 def index():
     return "<h1>Dragons Recommend System for Startups</h1>"
 
 
 # initialization
-@app.route('/init')
+@app.route('/api/init')
 def init_data():
 
     global HEROKU_ON
@@ -46,7 +46,7 @@ def init_data():
     return result
 
 
-@app.route('/ping')
+@app.route('/api/ping')
 def ping():
 
     global DATA_LOADED
@@ -63,7 +63,7 @@ def ping():
 # "Фильтр 'Рынок' для Инновационных компаний",
 # "Фильтр 'Технологии' для Инновационных компаний",
 # 'Бизнес-модель для Инновационных компаний'
-@app.route('/easyrecommend', methods=['POST'])
+@app.route('/api/easyrecommend', methods=['POST'])
 def query():
     data = json.loads(request.json)
     engi_score = data_dict['engi_centres_services_df']['Рынок'].apply(lambda x: x.find('Healthcare') >= 0).astype(int)
@@ -97,7 +97,7 @@ def query():
 # ' Опубликован на Навигаторе по стартап-экосистеме Москвы (navigator.innoagency.ru/main/list-company)',
 # 'Инновационная компания',
 # 'Стартап'
-# @app.route('/personrecommend', methods=['POST'])
+# @app.route('/api/personrecommend', methods=['POST'])
 # def update_index():
 #     data = json.loads(request.json)
 #
