@@ -2,6 +2,7 @@ import json
 import flask
 import pandas as pd
 from flask import request
+from flask_cors import CORS, cross_origin
 
 # global dict for all data
 data_dict = {}
@@ -11,6 +12,8 @@ HEROKU_ON = False
 DATA_LOADED = False
 
 app = flask.Flask(__name__)
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 # A welcome message to test our server
 @app.route('/')
@@ -60,17 +63,17 @@ def ping():
 # "Фильтр 'Рынок' для Инновационных компаний",
 # "Фильтр 'Технологии' для Инновационных компаний",
 # 'Бизнес-модель для Инновационных компаний'
-# @app.route('/easyrecommend', methods=['POST'])
-# def query():
-#     data = json.loads(request.json)
-#     mask = engi_centres_services_df['Рынок'].apply(lambda x: x.find('Healthcare') >= 0)
-#     filtered_result = engi_centres_services_df[mask]
-#     if filtered_result.size >= 0:
-#         result = engi_centres_services_df[mask]['Название объекта'].to_numpy().tolist()
-#     else:
-#         result = 'Рекомендаций нет'
-#
-#     return flask.jsonify(result)
+@app.route('/easyrecommend', methods=['POST'])
+def query():
+    data = json.loads(request.json)
+    engi_score = data_dict['engi_centres_services_df']['Рынок'].apply(lambda x: x.find('Healthcare') >= 0).astype(int)
+    filtered_result = data_dict['engi_centres_services_df'][mask]
+    if filtered_result.size >= 0:
+        result = data_dict['engi_centres_services_df'][mask]['Название объекта'].to_numpy().tolist()
+    else:
+        result = 'Рекомендаций нет'
+
+    return flask.jsonify(result)
 
 
 # 'Сервис',
