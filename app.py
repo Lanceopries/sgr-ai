@@ -34,12 +34,14 @@ def init_data():
     else:
         path = 'D:\heroku_test\\'
 
-    data_dict['engi_centres_services_df'] = pd.read_csv(path + 'engi_centres_services.csv')
-    data_dict['accelerator_services_df'] = pd.read_csv(path + 'accelerators_services.csv')
-    data_dict['business_incubs_services_df'] = pd.read_csv(path + 'business_incubs.csv')
-    data_dict['institutes_services_df'] = pd.read_csv(path + 'institutes.csv')
-    data_dict['pilot_services_df'] = pd.read_csv(path + 'pilot.csv')
-    data_dict['venture_fond_services_df'] = pd.read_csv(path + 'venture_fond_services.csv')
+    data_dict['engi_centres_services_df'] = pd.read_csv(path + 'engi_centres_services.csv').fillna('NoneType')
+    data_dict['accelerator_services_df'] = pd.read_csv(path + 'accelerators_services.csv').fillna('NoneType')
+    data_dict['business_incubs_services_df'] = pd.read_csv(path + 'business_incubs.csv').fillna('NoneType')
+    data_dict['institutes_services_df'] = pd.read_csv(path + 'institutes.csv').fillna('NoneType')
+    data_dict['pilot_services_df'] = pd.read_csv(path + 'pilot.csv').fillna('NoneType')
+    data_dict['venture_fond_services_df'] = pd.read_csv(path + 'venture_fond_services.csv').fillna('NoneType')
+
+    data_dict['accelerator_services_df'].rename(columns={'Название набора': 'Название объекта'}, inplace=True)
 
     DATA_LOADED = True
 
@@ -68,17 +70,34 @@ def ping():
 def query():
     data = request.json
 
-    engi_score = pd.Series(np.zeros(len(data_dict['engi_centres_services_df']['Рынок']))).astype(int)
+    placeholder_df_dict = {}
+    score_series_dict = {}
 
-    for market_type in data['start_up']['market_type']:
-        engi_score += data_dict['engi_centres_services_df']['Рынок'].apply(lambda x: x.find(market_type) >= 0).astype(int)
+    for key in data_dict.keys():
+        placeholder_df_dict[key] = data_dict[key].copy()
+        score_series_dict[key] = pd.Series(np.zeros(data_dict[key].shape[0])).astype(int)
 
-    placeholder_copy = data_dict['engi_centres_services_df'].copy()
-    placeholder_copy['rating'] = engi_score
+    for field in data['start_up'].keys():
+        for filter_type in data['start_up'][field]:
+            for key in data_dict.keys():
+                if field in data_dict[key].columns.values:
+                    score_series_dict[key] += data_dict[key][field].apply(lambda x: x.find(filter_type) >= 0).astype(int)
 
-    filtered_result = placeholder_copy.sort_values('rating', ascending=False).iloc[:10]
+    result_df_list = []
+
+    for key in data_dict.keys():
+        placeholder_df_dict[key]['rating'] = score_series_dict[key] / score_series_dict[key].max()
+        placeholder_df_dict[key]['type'] = key
+        placeholder_df_dict[key].rename(columns={'Название объекта': 'name'}, inplace=True)
+
+        result_df_list += [placeholder_df_dict[key][['name', 'type', 'rating']]]
+
+
+    result_df = pd.concat(result_df_list)
+
+    filtered_result = result_df.sort_values('rating', ascending=False).iloc[:100]
     if filtered_result.size >= 0:
-        result = filtered_result['Название объекта'].to_numpy().tolist()
+        result = filtered_result.to_numpy().tolist()
     else:
         result = 'Рекомендаций нет'
 
