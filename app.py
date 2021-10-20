@@ -41,7 +41,12 @@ def init_data():
     data_dict['pilot_services_df'] = pd.read_csv(path + 'pilot.csv').fillna('NoneType')
     data_dict['venture_fond_services_df'] = pd.read_csv(path + 'venture_fond_services.csv').fillna('NoneType')
 
-    data_dict['accelerator_services_df'].rename(columns={'Название набора': 'Название объекта'}, inplace=True)
+    data_dict['engi_centres_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
+    data_dict['accelerator_services_df'].rename(columns={'Название набора': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
+    data_dict['business_incubs_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
+    data_dict['institutes_services_df'].rename(columns={'Название объекта': 'name', 'Сервисы': 'service'}, inplace=True)
+    data_dict['pilot_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type'}, inplace=True)
+    data_dict['venture_fond_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
 
     DATA_LOADED = True
 
@@ -95,13 +100,21 @@ def query():
 
     result_df = pd.concat(result_df_list)
 
-    filtered_result = result_df.sort_values('rating', ascending=False).iloc[:100]
-    if filtered_result.size >= 0:
-        result = filtered_result.to_numpy().tolist()
-    else:
-        result = 'Рекомендаций нет'
+    result_list = []
 
-    return flask.jsonify(result)
+    filtered_result = result_df.sort_values('rating', ascending=False).iloc[:10]
+
+    for index in range(filtered_result.shape[0]):
+        elem = filtered_result.iloc[index]
+        result_list += [
+            {
+                'name': elem['name'],
+                'type': elem['type'],
+                'rating': elem['rating']
+            }
+        ]
+
+    return flask.jsonify(result_list)
 
 
 # 'Сервис',
