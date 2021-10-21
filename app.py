@@ -8,7 +8,7 @@ import numpy as np
 # global dict for all data
 data_dict = {}
 
-HEROKU_ON = False
+HEROKU_ON = True
 
 DATA_LOADED = False
 
@@ -145,7 +145,7 @@ def query():
         elem = filtered_result.iloc[index]
         result_list += [
             {
-                'name': elem['name'],
+                'name': elem['name'].encode("utf-8", "ignore").decode('utf-8'),
                 'type': elem['type'],
                 'rating': elem['rating']
             }
