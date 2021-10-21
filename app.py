@@ -8,9 +8,27 @@ import numpy as np
 # global dict for all data
 data_dict = {}
 
-HEROKU_ON = True
+HEROKU_ON = False
 
 DATA_LOADED = False
+
+if HEROKU_ON:
+    path = ''
+else:
+    path = 'D:\heroku_test\\'
+
+matching_df = pd.read_csv(path + 'matching_df.csv', header=None)
+need_list = matching_df.iloc[1][1:].tolist()
+service_list = matching_df[1][1:].tolist()
+
+matching_list = []
+matching_dict = {}
+for i in range(2, 22):
+    for j in range(2, 12):
+        if matching_df.iloc[i, j] == '1':
+            matching_list += [[i - 1, j - 1]]
+            matching_dict[service_list[i - 1]] = need_list[j - 1]
+
 
 app = flask.Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
@@ -40,13 +58,18 @@ def init_data():
     data_dict['institutes_services_df'] = pd.read_csv(path + 'institutes.csv').fillna('NoneType')
     data_dict['pilot_services_df'] = pd.read_csv(path + 'pilot.csv').fillna('NoneType')
     data_dict['venture_fond_services_df'] = pd.read_csv(path + 'venture_fond_services.csv').fillna('NoneType')
+    data_dict['corporate_services_df'] = pd.read_csv(path + 'corporate.csv').fillna('NoneType')
 
     data_dict['engi_centres_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
-    data_dict['accelerator_services_df'].rename(columns={'Название набора': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
-    data_dict['business_incubs_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
-    data_dict['institutes_services_df'].rename(columns={'Название объекта': 'name', 'Сервисы': 'service'}, inplace=True)
+    data_dict['accelerator_services_df'].rename(columns={'Название набора': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
+    data_dict['business_incubs_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
+    data_dict['institutes_services_df'].rename(columns={'Название объекта': 'name', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
     data_dict['pilot_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type'}, inplace=True)
-    data_dict['venture_fond_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
+    data_dict['venture_fond_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
+    data_dict['corporate_services_df'].rename(columns={'Коммерческое наименование': 'name', 'Рыночные ниши': 'market_type', 'Технологии': 'tech_type', 'Бизнес-модель': 'b_model'}, inplace=True)
+
+    data_dict['pilot_services_df']['service'] = 'Тестирование продукта'
+    data_dict['corporate_services_df']['service'] = 'Инвестиции'
 
     DATA_LOADED = True
 
@@ -75,23 +98,35 @@ def ping():
 def query():
     data = request.json
 
+    #TODO сделать кандидатную модель по сервисам через matching_dict
+    candidate_filter = data['start_up']['service'][0]
+    candidate_services = [k for k, v in matching_dict.items() if v == candidate_filter]
+
     placeholder_df_dict = {}
     score_series_dict = {}
 
     for key in data_dict.keys():
-        placeholder_df_dict[key] = data_dict[key].copy()
-        score_series_dict[key] = pd.Series(np.zeros(data_dict[key].shape[0])).astype(int)
+
+        mask = pd.Series(np.zeros(data_dict[key].shape[0])).astype(int)
+
+        for service in candidate_services:
+            mask += data_dict[key]['service'].apply(lambda x: x.find(service) >= 0).astype(int)
+
+        mask = mask > 0
+
+        placeholder_df_dict[key] = data_dict[key][mask].copy()
+        score_series_dict[key] = pd.Series(np.zeros(placeholder_df_dict[key].shape[0])).astype(int)
 
     for field in data['start_up'].keys():
         for filter_type in data['start_up'][field]:
-            for key in data_dict.keys():
-                if field in data_dict[key].columns.values:
-                    score_series_dict[key] += data_dict[key][field].apply(lambda x: x.find(filter_type) >= 0).astype(int)
+            for key in placeholder_df_dict.keys():
+                if field in placeholder_df_dict[key].columns.values:
+                    score_series_dict[key] += placeholder_df_dict[key][field].apply(lambda x: x.find(filter_type) >= 0).astype(int)
 
     result_df_list = []
 
     for key in data_dict.keys():
-        placeholder_df_dict[key]['rating'] = score_series_dict[key] / score_series_dict[key].max()
+        placeholder_df_dict[key]['rating'] = score_series_dict[key] #/ score_series_dict[key].max()
         placeholder_df_dict[key]['type'] = key
         placeholder_df_dict[key].rename(columns={'Название объекта': 'name'}, inplace=True)
 

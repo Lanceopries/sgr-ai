@@ -1,0 +1,71 @@
+,Коммерческое наименование,Рыночные ниши,Технологии,Бизнес-модель
+0,Иркут,Transport & Logistics,,B2B; B2G
+1,"Издательство ""Просвещение""",EdTech; Мedia & Communication,AR/VR,B2C; B2B; B2G
+2,Р-фарм,Healthcare,Биотехнологии,B2C; B2B; B2G
+3,Яндекс,Advertising & Marketing; Business Software; E-commerce; Transport & Logistics,BigData; Искусственный интеллект и машинное обучение; Компьютерное зрение,B2C; B2B
+4,ВТБ,FinTech,,B2C; B2B
+5,"Банк ""Открытие""",FinTech,,B2C; B2B
+6,МТС,Telecom,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2C; B2B; B2G
+7,КРОК,Business Software,AR/VR; BigData; Блокчейн; Интернет вещей; Искусственный интеллект и машинное обучение,B2B
+8,Tele2,Telecom,BigData; Интернет вещей,B2C; B2B
+9,Лаборатория Касперского,Cybersecurity,BigData; Блокчейн; Искусственный интеллект и машинное обучение,B2C; B2B; B2G
+10,QIWI,FinTech,,B2C; B2B
+11,IBS,Business Software; Cybersecurity,BigData,B2B; B2G
+12,ЛАНИТ,Business Software,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2B; B2G
+13,Mail.ru Group,Business Software; E-commerce; Gaming; Мedia & Communication,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2C; B2B
+14,Сбер,FinTech,BigData; Биометрия; Блокчейн; Искусственный интеллект и машинное обучение,B2C; B2B; B2G
+15,РОСТЕЛЕКОМ,Telecom,BigData; Биометрия; Интернет вещей,B2C; B2B; B2G
+16,Билайн,Telecom,BigData; Интернет вещей,B2C; B2B; B2G
+17,"Группа компаний ""Калашников""",,,
+18,МегаФон,Telecom,BigData; Интернет вещей,B2C; B2B; B2G
+19,INVITRO,Healthcare,,B2C; B2B
+20,ТВЭЛ,IndustrialTech,Новые и портативные источники энергии,B2B
+21,Уралхим,AgroTech; IndustrialTech,Биотехнологии,B2B
+22,Росатом,IndustrialTech,Новые и портативные источники энергии,B2B; B2G
+23,Bayer,Healthcare,Биотехнологии,B2C; B2B; B2G
+24,PwC,LegalTech,,B2B; B2G
+25,Газпром нефть,IndustrialTech,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2C; B2B
+26,Гознак,FinTech; LegalTech,Биометрия; Новые материалы,B2B; B2G
+27,Microsoft,Business Software,BigData; Искусственный интеллект и машинное обучение,B2C; B2B
+28,Татнефть,IndustrialTech,,B2C; B2B
+29,РоссельхозБанк,AgroTech; FinTech,,B2C; B2B; B2G
+30,X5 Retail Group,E-commerce; FoodTech; RetailTech; Transport & Logistics,BigData; Искусственный интеллект и машинное обучение; Компьютерное зрение; Робототехника,B2C; B2B
+31,Уралсиб,FinTech,,B2C; B2B
+32,ОДК,IndustrialTech; Transport & Logistics,,B2B; B2G
+33,Вертолеты России,Transport & Logistics,Беспилотники,B2B; B2G
+34,Почта России,Transport & Logistics,,B2C; B2B; B2G
+35,МЕДСИ,Healthcare,,B2C; B2B2C
+36,СИБУР,IndustrialTech,,B2B
+37,Ростех,Healthcare; IndustrialTech; PropTech; Telecom,BigData; Интернет вещей; Искусственный интеллект и машинное обучение; Новые материалы,B2B; B2G
+38,РЖД,Transport & Logistics,,B2C; B2B; B2G
+39,Кировский завод,IndustrialTech,,B2B; B2G
+40,Стратегические пункты управления,SpaceTech,,B2C; B2B
+41,Huawei,Telecom,Интернет вещей,B2C; B2B
+42,Газпромбанк,FinTech,,B2C; B2B
+43,ПИК,PropTech,,B2C; B2B
+44,Объединенная авиастроительная корпорация (ОАК),Transport & Logistics,Новые материалы,B2B; B2G
+45,Газпром,IndustrialTech,,B2B; B2B2C
+46,Северсталь,IndustrialTech,,B2B; B2G
+47,Магнит,E-commerce; FoodTech; RetailTech,,B2C
+48,S7 Airlines,Transport & Logistics,,B2C; B2B
+49,ЭФКО,FoodTech,Биотехнологии,B2C; B2B
+50,Россети,CleanTech,,B2C; B2B; B2G
+51,КАМАЗ,Transport & Logistics,Беспилотники; Искусственный интеллект и машинное обучение; Новые и портативные источники энергии,B2C; B2B; B2G
+52,Система,E-commerce; FinTech; Healthcare; Telecom,,B2B
+53,Райффайзенбанк,FinTech,,B2C; B2B
+54,Роскосмос,SpaceTech,,B2B; B2G
+55,Ингосстрах,InsuranceTech,,B2C; B2B
+56,АЛРОСА,IndustrialTech,,B2C; B2B
+57,Фармстандарт,Healthcare,,B2C; B2B
+58,ММК,IndustrialTech,,B2B
+59,ТМХ,IndustrialTech,,B2B; B2G
+60,,,,
+61,НЛМК,IndustrialTech,,B2B
+62,,,,
+63,ЛУКОЙЛ,IndustrialTech,,B2C; B2B
+64,Актион-МЦФЭР,EdTech; LegalTech; Мedia & Communication,,B2C; B2B; B2G
+65,,,,
+66,ВкусВилл,E-commerce; FoodTech,,B2C; B2B
+67,УЗТМ-КАРТЭКС,IndustrialTech; Transport & Logistics,,B2B
+68,ФОРЭНЕРГО,IndustrialTech,,B2B
+69,Лента,E-commerce; RetailTech,,B2C; B2B
