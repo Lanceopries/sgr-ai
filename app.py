@@ -8,7 +8,7 @@ import numpy as np
 # global dict for all data
 data_dict = {}
 
-HEROKU_ON = True
+HEROKU_ON = False
 
 DATA_LOADED = False
 
@@ -138,6 +138,8 @@ def query():
     result_list = []
 
     filtered_result = result_df.sort_values('rating', ascending=False).iloc[:10]
+    filtered_result['rating'] = filtered_result['rating'] / filtered_result['rating'].max()
+    filtered_result.dropna(inplace=True)
 
     for index in range(filtered_result.shape[0]):
         elem = filtered_result.iloc[index]
