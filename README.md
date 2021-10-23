@@ -19,3 +19,6 @@ SGR создается, для получения и предоставлени�
 - Flask_cors
 - Numpy
 - Space_bandits
+
+# Документация
+https://disk.yandex.ru/i/31PgzplmUSNxhA
