@@ -3,4 +3,5 @@ flask_cors
 pandas
 openpyxl
 gunicorn
+torch==1.8.1+cpu
 space_bandits

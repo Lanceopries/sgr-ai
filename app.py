@@ -81,9 +81,9 @@ def init_data():
         global bandit_model
         bandit_model = pickle.load(open(path + 'bandit_model.pkl', 'rb'))
 
-        # with open(path + 'context_columns.pkl', 'rb') as handle:
-        #     global context_columns
-        #     context_columns = pickle.load(handle)
+        with open(path + 'context_columns.pkl', 'rb') as handle:
+            global context_columns
+            context_columns = pickle.load(handle)
 
         DATA_LOADED = True
 
