@@ -45,44 +45,49 @@ def index():
 @app.route('/api/init')
 def init_data():
 
-    global HEROKU_ON
-    global DATA_LOADED
+    try:
+        global HEROKU_ON
+        global DATA_LOADED
 
-    if HEROKU_ON:
-        path = ''
-    else:
-        path = 'D:\heroku_test\\'
+        if HEROKU_ON:
+            path = ''
+        else:
+            path = 'D:\heroku_test\\'
 
-    data_dict['engi_centres_services_df'] = pd.read_csv(path + 'engi_centres_services.csv').fillna('NoneType')
-    data_dict['accelerator_services_df'] = pd.read_csv(path + 'accelerators_services.csv').fillna('NoneType')
-    data_dict['business_incubs_services_df'] = pd.read_csv(path + 'business_incubs.csv').fillna('NoneType')
-    data_dict['institutes_services_df'] = pd.read_csv(path + 'institutes.csv').fillna('NoneType')
-    data_dict['pilot_services_df'] = pd.read_csv(path + 'pilot.csv').fillna('NoneType')
-    data_dict['venture_fond_services_df'] = pd.read_csv(path + 'venture_fond_services.csv').fillna('NoneType')
-    data_dict['corporate_services_df'] = pd.read_csv(path + 'corporate.csv').fillna('NoneType')
+        data_dict['engi_centres_services_df'] = pd.read_csv(path + 'engi_centres_services.csv').fillna('NoneType')
+        data_dict['accelerator_services_df'] = pd.read_csv(path + 'accelerators_services.csv').fillna('NoneType')
+        data_dict['business_incubs_services_df'] = pd.read_csv(path + 'business_incubs.csv').fillna('NoneType')
+        data_dict['institutes_services_df'] = pd.read_csv(path + 'institutes.csv').fillna('NoneType')
+        data_dict['pilot_services_df'] = pd.read_csv(path + 'pilot.csv').fillna('NoneType')
+        data_dict['venture_fond_services_df'] = pd.read_csv(path + 'venture_fond_services.csv').fillna('NoneType')
+        data_dict['corporate_services_df'] = pd.read_csv(path + 'corporate.csv').fillna('NoneType')
 
-    data_dict['engi_centres_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
-    data_dict['accelerator_services_df'].rename(columns={'Название набора': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
-    data_dict['business_incubs_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
-    data_dict['institutes_services_df'].rename(columns={'Название объекта': 'name', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
-    data_dict['pilot_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type'}, inplace=True)
-    data_dict['venture_fond_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
-    data_dict['corporate_services_df'].rename(columns={'Коммерческое наименование': 'name', 'Рыночные ниши': 'market_type', 'Технологии': 'tech_type', 'Бизнес-модель': 'b_model'}, inplace=True)
+        data_dict['engi_centres_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
+        data_dict['accelerator_services_df'].rename(columns={'Название набора': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
+        data_dict['business_incubs_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
+        data_dict['institutes_services_df'].rename(columns={'Название объекта': 'name', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
+        data_dict['pilot_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type'}, inplace=True)
+        data_dict['venture_fond_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
+        data_dict['corporate_services_df'].rename(columns={'Коммерческое наименование': 'name', 'Рыночные ниши': 'market_type', 'Технологии': 'tech_type', 'Бизнес-модель': 'b_model'}, inplace=True)
 
-    data_dict['pilot_services_df']['service'] = 'Тестирование продукта'
-    data_dict['corporate_services_df']['service'] = 'Инвестиции'
+        data_dict['pilot_services_df']['service'] = 'Тестирование продукта'
+        data_dict['corporate_services_df']['service'] = 'Инвестиции'
 
-    with open(path + 'bandit_model.pkl', 'rb') as handle:
-        global bandit_model
-        bandit_model = pickle.load(handle)
+        with open(path + 'bandit_model.pkl', 'rb') as handle:
+            global bandit_model
+            bandit_model = pickle.load(handle)
 
-    with open(path + 'context_columns.pkl', 'rb') as handle:
-        global context_columns
-        context_columns = pickle.load(handle)
+        with open(path + 'context_columns.pkl', 'rb') as handle:
+            global context_columns
+            context_columns = pickle.load(handle)
 
-    DATA_LOADED = True
+        DATA_LOADED = True
 
-    result = {'status': 'ok'}
+        result = {'status': 'ok'}
+
+    except Exception as e:
+        result = {'status': e}
+
     return result
 
 
