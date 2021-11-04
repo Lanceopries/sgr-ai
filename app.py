@@ -73,10 +73,6 @@ def init_data():
     data_dict['pilot_services_df']['service'] = 'Тестирование продукта'
     data_dict['corporate_services_df']['service'] = 'Инвестиции'
 
-    # with open(path + 'bandit_model.pkl', 'rb') as handle:
-    #
-    #     bandit_model = pickle.load(handle)
-
     global bandit_model
     bandit_model = pickle.load(open(path + 'bandit_model.pkl', 'rb'))
 
@@ -193,8 +189,8 @@ def personal_query():
 
     startup_context = np.zeros(len(context_columns))
 
-    # bandit_expectations = bandit_model.expected_values(context=startup_context)
-    # most_expected_actions = np.argsort(bandit_expectations)[-2:]
+    bandit_expectations = bandit_model.expected_values(context=startup_context)
+    most_expected_actions = np.argsort(bandit_expectations)[-2:]
 
     #TODO
     context_dict = {
