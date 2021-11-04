@@ -5,6 +5,7 @@ from flask import request
 from flask_cors import CORS, cross_origin
 import numpy as np
 import pickle
+from space_bandits import LinearBandits
 
 # global dict for all data
 data_dict = {}

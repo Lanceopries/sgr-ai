@@ -3,3 +3,4 @@ flask_cors
 pandas
 openpyxl
 gunicorn
+space_bandits
