@@ -193,8 +193,8 @@ def personal_query():
 
     startup_context = np.zeros(len(context_columns))
 
-    bandit_expectations = bandit_model.expected_values(context=startup_context)
-    most_expected_actions = np.argsort(bandit_expectations)[-2:]
+    # bandit_expectations = bandit_model.expected_values(context=startup_context)
+    # most_expected_actions = np.argsort(bandit_expectations)[-2:]
 
     #TODO
     context_dict = {
