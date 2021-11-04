@@ -73,13 +73,13 @@ def init_data():
         data_dict['pilot_services_df']['service'] = 'Тестирование продукта'
         data_dict['corporate_services_df']['service'] = 'Инвестиции'
 
-        with open(path + 'bandit_model.pkl', 'rb') as handle:
-            global bandit_model
-            bandit_model = pickle.load(handle)
-
-        with open(path + 'context_columns.pkl', 'rb') as handle:
-            global context_columns
-            context_columns = pickle.load(handle)
+        # with open(path + 'bandit_model.pkl', 'rb') as handle:
+        #     global bandit_model
+        #     bandit_model = pickle.load(handle)
+        #
+        # with open(path + 'context_columns.pkl', 'rb') as handle:
+        #     global context_columns
+        #     context_columns = pickle.load(handle)
 
         DATA_LOADED = True
 
