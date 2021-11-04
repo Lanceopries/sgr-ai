@@ -1,4 +1,4 @@
-https://download.pytorch.org/whl/cpu/torch-1.10.0-cp39-cp39-manylinux2014_aarch64.whl
+https://download.pytorch.org/whl/cpu/torch-1.10.0%2Bcpu-cp39-cp39-linux_x86_64.whl
 flask
 flask_cors
 pandas
