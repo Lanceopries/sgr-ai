@@ -3,4 +3,3 @@ flask_cors
 pandas
 openpyxl
 gunicorn
-pickle
