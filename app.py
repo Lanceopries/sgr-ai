@@ -4,11 +4,12 @@ import pandas as pd
 from flask import request
 from flask_cors import CORS, cross_origin
 import numpy as np
+import pickle
 
 # global dict for all data
 data_dict = {}
 
-HEROKU_ON = True
+HEROKU_ON = False
 
 DATA_LOADED = False
 
@@ -71,6 +72,14 @@ def init_data():
     data_dict['pilot_services_df']['service'] = 'Тестирование продукта'
     data_dict['corporate_services_df']['service'] = 'Инвестиции'
 
+    with open(path + 'bandit_model.pkl', 'rb') as handle:
+        global bandit_model
+        bandit_model = pickle.load(handle)
+
+    with open(path + 'context_columns.pkl', 'rb') as handle:
+        global context_columns
+        context_columns = pickle.load(handle)
+
     DATA_LOADED = True
 
     result = {'status': 'ok'}
@@ -116,6 +125,77 @@ def query():
 
         placeholder_df_dict[key] = data_dict[key][mask].copy()
         score_series_dict[key] = pd.Series(np.zeros(placeholder_df_dict[key].shape[0])).astype(int)
+
+    for field in data['start_up'].keys():
+        for filter_type in data['start_up'][field]:
+            for key in placeholder_df_dict.keys():
+                if field in placeholder_df_dict[key].columns.values:
+                    score_series_dict[key] += placeholder_df_dict[key][field].apply(lambda x: int(x.find(filter_type) >= 0) / np.log1p(len(x))) * np.log1p(len(placeholder_df_dict[key].columns.values))
+
+    result_df_list = []
+
+    for key in data_dict.keys():
+        placeholder_df_dict[key]['rating'] = score_series_dict[key] #/ score_series_dict[key].max()
+        placeholder_df_dict[key]['type'] = key
+        placeholder_df_dict[key].rename(columns={'Название объекта': 'name'}, inplace=True)
+
+        result_df_list += [placeholder_df_dict[key][['name', 'type', 'rating']]]
+
+
+    result_df = pd.concat(result_df_list)
+
+    result_list = []
+
+    filtered_result = result_df.sort_values('rating', ascending=False).iloc[:10]
+    filtered_result['rating'] = filtered_result['rating'] / filtered_result['rating'].max()
+    filtered_result.dropna(inplace=True)
+
+    for index in range(filtered_result.shape[0]):
+        elem = filtered_result.iloc[index]
+        result_list += [
+            {
+                'name': elem['name'].encode("utf-8", "ignore").decode('utf-8'),
+                'type': elem['type'],
+                'rating': elem['rating']
+            }
+        ]
+
+    return flask.jsonify(result_list)
+
+@app.route('/api/personalrecommend', methods=['POST'])
+def personal_query():
+
+    data = request.json
+
+    candidate_filter = data['start_up']['service'][0]
+    candidate_services = [k for k, v in matching_dict.items() if v == candidate_filter]
+
+    placeholder_df_dict = {}
+    score_series_dict = {}
+
+    for key in data_dict.keys():
+
+        mask = pd.Series(np.zeros(data_dict[key].shape[0])).astype(int)
+
+        for service in candidate_services:
+            mask += data_dict[key]['service'].apply(lambda x: x.find(service) >= 0).astype(int)
+
+        mask = mask > 0
+
+        placeholder_df_dict[key] = data_dict[key][mask].copy()
+        score_series_dict[key] = pd.Series(np.zeros(placeholder_df_dict[key].shape[0])).astype(int)
+
+
+
+    startup_context = np.zeros(len(context_columns))
+
+    bandit_expectations = bandit_model.expected_values(context=startup_context)
+    most_expected_actions = np.argsort(bandit_expectations)[-2:]
+
+    #TODO
+    context_dict = {
+        0: ['venture_fond_services_df']
+    }
 
     for field in data['start_up'].keys():
         for filter_type in data['start_up'][field]:
