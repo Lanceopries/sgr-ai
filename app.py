@@ -121,7 +121,7 @@ def query():
         for filter_type in data['start_up'][field]:
             for key in placeholder_df_dict.keys():
                 if field in placeholder_df_dict[key].columns.values:
-                    score_series_dict[key] += placeholder_df_dict[key][field].apply(lambda x: x.find(filter_type) >= 0).astype(int) * len(placeholder_df_dict[key].columns.values)
+                    score_series_dict[key] += placeholder_df_dict[key][field].apply(lambda x: int(x.find(filter_type) >= 0) / np.log1p(len(x))) * np.log1p(len(placeholder_df_dict[key].columns.values))
 
     result_df_list = []
 
