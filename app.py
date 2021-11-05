@@ -239,6 +239,38 @@ def personal_query():
 
     return flask.jsonify(result_list)
 
+@app.route('/api/update', methods=['POST'])
+def bandit_update():
+
+    data = request.json
+
+    startup = data['start_up']
+    startup_context = np.zeros(len(context_columns))
+
+    for i in range(len(context_columns)):
+        column_name = context_columns[i]
+
+        for field in startup.keys():
+
+            if (field == 'fond_type') or (field == 'result'):
+                break
+
+            if column_name.find(field) != -1:
+                startup_context[i] = 1
+            for elem in startup[field]:
+                if isinstance(elem, str):
+                    if column_name.find(elem) != -1:
+                        startup_context[i] = 1
+
+    bandit_model.update(context=startup_context, action=startup['fond_type'], reward=startup['result'])
+
+    # with open('bandit_model_new.pkl', 'wb') as handle:
+    #     pickle.dump(bandit_model, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+    return {
+        'status': 'ok'
+    }
+
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
