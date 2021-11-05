@@ -31,6 +31,36 @@ for i in range(2, 22):
             matching_list += [[i - 1, j - 1]]
             matching_dict[service_list[i - 1]] = need_list[j - 1]
 
+if HEROKU_ON:
+    path = ''
+else:
+    path = 'D:\heroku_test\\'
+
+data_dict['engi_centres_services_df'] = pd.read_csv(path + 'engi_centres_services.csv').fillna('NoneType')
+data_dict['accelerator_services_df'] = pd.read_csv(path + 'accelerators_services.csv').fillna('NoneType')
+data_dict['business_incubs_services_df'] = pd.read_csv(path + 'business_incubs.csv').fillna('NoneType')
+data_dict['institutes_services_df'] = pd.read_csv(path + 'institutes.csv').fillna('NoneType')
+data_dict['pilot_services_df'] = pd.read_csv(path + 'pilot.csv').fillna('NoneType')
+data_dict['venture_fond_services_df'] = pd.read_csv(path + 'venture_fond_services.csv').fillna('NoneType')
+data_dict['corporate_services_df'] = pd.read_csv(path + 'corporate.csv').fillna('NoneType')
+
+data_dict['engi_centres_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
+data_dict['accelerator_services_df'].rename(columns={'Название набора': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
+data_dict['business_incubs_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
+data_dict['institutes_services_df'].rename(columns={'Название объекта': 'name', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
+data_dict['pilot_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type'}, inplace=True)
+data_dict['venture_fond_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
+data_dict['corporate_services_df'].rename(columns={'Коммерческое наименование': 'name', 'Рыночные ниши': 'market_type', 'Технологии': 'tech_type', 'Бизнес-модель': 'b_model'}, inplace=True)
+
+data_dict['pilot_services_df']['service'] = 'Тестирование продукта'
+data_dict['corporate_services_df']['service'] = 'Инвестиции'
+
+global bandit_model
+bandit_model = pickle.load(open(path + 'bandit_model.pkl', 'rb'))
+
+global context_columns
+context_columns = pickle.load(open(path + 'context_columns.pkl', 'rb'))
+
 
 app = flask.Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
@@ -42,42 +72,11 @@ def index():
     return "<h1>Dragons Recommend System for Startups</h1>"
 
 
-# initialization
 @app.route('/api/init')
 def init_data():
 
     global HEROKU_ON
     global DATA_LOADED
-
-    if HEROKU_ON:
-        path = ''
-    else:
-        path = 'D:\heroku_test\\'
-
-    data_dict['engi_centres_services_df'] = pd.read_csv(path + 'engi_centres_services.csv').fillna('NoneType')
-    data_dict['accelerator_services_df'] = pd.read_csv(path + 'accelerators_services.csv').fillna('NoneType')
-    data_dict['business_incubs_services_df'] = pd.read_csv(path + 'business_incubs.csv').fillna('NoneType')
-    data_dict['institutes_services_df'] = pd.read_csv(path + 'institutes.csv').fillna('NoneType')
-    data_dict['pilot_services_df'] = pd.read_csv(path + 'pilot.csv').fillna('NoneType')
-    data_dict['venture_fond_services_df'] = pd.read_csv(path + 'venture_fond_services.csv').fillna('NoneType')
-    data_dict['corporate_services_df'] = pd.read_csv(path + 'corporate.csv').fillna('NoneType')
-
-    data_dict['engi_centres_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service'}, inplace=True)
-    data_dict['accelerator_services_df'].rename(columns={'Название набора': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
-    data_dict['business_incubs_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
-    data_dict['institutes_services_df'].rename(columns={'Название объекта': 'name', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
-    data_dict['pilot_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type'}, inplace=True)
-    data_dict['venture_fond_services_df'].rename(columns={'Название объекта': 'name', 'Рынок': 'market_type', 'Технологии': 'tech_type', 'Сервисы': 'service', 'Стадия стартапа': 'evo_stage'}, inplace=True)
-    data_dict['corporate_services_df'].rename(columns={'Коммерческое наименование': 'name', 'Рыночные ниши': 'market_type', 'Технологии': 'tech_type', 'Бизнес-модель': 'b_model'}, inplace=True)
-
-    data_dict['pilot_services_df']['service'] = 'Тестирование продукта'
-    data_dict['corporate_services_df']['service'] = 'Инвестиции'
-
-    global bandit_model
-    bandit_model = pickle.load(open(path + 'bandit_model.pkl', 'rb'))
-
-    global context_columns
-    context_columns = pickle.load(open(path + 'context_columns.pkl', 'rb'))
 
     DATA_LOADED = True
 
@@ -98,11 +97,6 @@ def ping():
     return result
 
 
-# 'Сервис',
-# 'Дата основания',
-# "Фильтр 'Рынок' для Инновационных компаний",
-# "Фильтр 'Технологии' для Инновационных компаний",
-# 'Бизнес-модель для Инновационных компаний'
 @app.route('/api/easyrecommend', methods=['POST'])
 def query():
     data = request.json
@@ -186,16 +180,28 @@ def personal_query():
         score_series_dict[key] = pd.Series(np.zeros(placeholder_df_dict[key].shape[0])).astype(int)
 
 
-
+    startup = data['start_up']
     startup_context = np.zeros(len(context_columns))
 
+    for i in range(len(context_columns)):
+        column_name = context_columns[i]
+
+        for field in startup.keys():
+            if column_name.find(field) != -1:
+                startup_context[i] = 1
+            for elem in startup[field]:
+                if isinstance(elem, str):
+                    if column_name.find(elem) != -1:
+                        startup_context[i] = 1
+
+    bandit_action = bandit_model.action(context=startup_context)
     bandit_expectations = bandit_model.expected_values(context=startup_context)
     most_expected_actions = np.argsort(bandit_expectations)[-2:]
 
-    #TODO
-    context_dict = {
-        0: ['venture_fond_services_df']
-    }
+    for key in placeholder_df_dict.keys():
+        placeholder_df_dict[key] = placeholder_df_dict[key][~(placeholder_df_dict[key]['type'] == 'NoneType')]
+        placeholder_df_dict[key] = placeholder_df_dict[key][placeholder_df_dict[key]['type'].astype(int) == bandit_action]
+
 
     for field in data['start_up'].keys():
         for filter_type in data['start_up'][field]:
@@ -232,35 +238,6 @@ def personal_query():
         ]
 
     return flask.jsonify(result_list)
-
-
-# 'Сервис',
-# 'Дата основания',
-# 'Технологическая ниша компании для Инновационных компаний',
-# 'Стадия развития компании для Инновационных компаний',
-# "Фильтр 'Рынок' для Инновационных компаний",
-# "Фильтр 'Технологии' для Инновационных компаний",
-# 'Бизнес-модель для Инновационных компаний',
-# 'основной ОКВЭД',
-# 'МСП да/нет',
-# 'Категория МСП',
-# 'Закупки / контракты компании',
-# 'Патенты компании',
-# 'резидент технопарков',
-# 'Продукты компании',
-# 'Экспортер',
-# 'Участник инновационного кластера города Москвы',
-# 'Участник Сколково',
-# 'Организация аккредитована на Бирже контрактного производства',
-# ' Опубликован на Навигаторе по стартап-экосистеме Москвы (navigator.innoagency.ru/main/list-company)',
-# 'Инновационная компания',
-# 'Стартап'
-# @app.route('/api/personrecommend', methods=['POST'])
-# def update_index():
-#     data = json.loads(request.json)
-#
-#     return data
-
 
 
 if __name__ == '__main__':
