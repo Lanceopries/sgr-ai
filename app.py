@@ -132,8 +132,9 @@ def query():
         placeholder_df_dict[key]['rating'] = score_series_dict[key] #/ score_series_dict[key].max()
         placeholder_df_dict[key]['type'] = key
         placeholder_df_dict[key].rename(columns={'Название объекта': 'name'}, inplace=True)
+        placeholder_df_dict[key].rename(columns={'Сайт': 'site'}, inplace=True)
 
-        result_df_list += [placeholder_df_dict[key][['name', 'type', 'rating']]]
+        result_df_list += [placeholder_df_dict[key][['name', 'type', 'rating', 'site']]]
 
 
     result_df = pd.concat(result_df_list)
@@ -150,7 +151,8 @@ def query():
             {
                 'name': elem['name'].encode("utf-8", "ignore").decode('utf-8'),
                 'type': elem['type'],
-                'rating': elem['rating']
+                'rating': elem['rating'],
+                'site': elem['site']
             }
         ]
 
@@ -215,8 +217,9 @@ def personal_query():
         placeholder_df_dict[key]['rating'] = score_series_dict[key] #/ score_series_dict[key].max()
         placeholder_df_dict[key]['type'] = key
         placeholder_df_dict[key].rename(columns={'Название объекта': 'name'}, inplace=True)
+        placeholder_df_dict[key].rename(columns={'Сайт': 'site'}, inplace=True)
 
-        result_df_list += [placeholder_df_dict[key][['name', 'type', 'rating']]]
+        result_df_list += [placeholder_df_dict[key][['name', 'type', 'rating', 'site']]]
 
 
     result_df = pd.concat(result_df_list)
@@ -233,7 +236,8 @@ def personal_query():
             {
                 'name': elem['name'].encode("utf-8", "ignore").decode('utf-8'),
                 'type': elem['type'],
-                'rating': elem['rating']
+                'rating': elem['rating'],
+                'site': elem['site']
             }
         ]
 

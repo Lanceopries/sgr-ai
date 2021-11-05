@@ -1,164 +1,164 @@
-,Название объекта,Рынок,Технологии,type
-0,Делимобиль,Transport & Logistics,,0
-1,Гидромашсервис,IndustrialTech,,0
-2,"Научно-производственная компания ""Пожхимзащита""",SafetyTech,,0
-3,"Технополис ""Москва""",IndustrialTech|CleanTech|Healthcare,,0
-4,"Научно-производственное предприятие ""Темп"" им. Ф. Короткова",IndustrialTech,Новые материалы|Робототехника,0
-5,Ланцет,Cybersecurity|EdTech|RetailTech|Healthcare,,0
-6,SberCloud,Cybersecurity|Business Software,Big Data|Искусственный интеллект и машинное обучение,0
-7,Московский техникум креативных индустрий им. Л.Б.Красина,EdTech,AR/VR,1
-8,Агентство реализации социально-политических инициатив,LegalTech|Мedia & Communication,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,0
-9,Российская государственная библиотека для слепых,EdTech|Consumer Goods & Services,,1
-10,Российский геронтологический научно-клинический центр,EdTech|Healthcare,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,1
-11,"Сеть клиник ""Семейный доктор""",Healthcare,Big Data|Аддитивные технологии|Искусственный интеллект и машинное обучение,0
-12,Институт экономики и антикризисного управления,EdTech,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,0
-13,"Культурный центр ""Вдохновение""",Entertainment,AR/VR,1
-14,MANUFAQTURY,PropTech|Business Software|SafetyTech,Биометрия|Искусственный интеллект и машинное обучение,0
-15,"Национальная сеть пансионатов для пожилых людей ""МИРРА""",CleanTech|Healthcare,,0
-16,Московский инженерно-физический институт,EdTech|SportTech|Business Software,AR/VR|Искусственный интеллект и машинное обучение,1
-17,Московский институт электронной техники,EdTech|SportTech|Business Software,AR/VR|Искусственный интеллект и машинное обучение,1
-18,"Университет ""Синергия""",EdTech,,0
-19,Городская клиническая больница №17,Healthcare,AR/VR|Big Data,1
-20,"Группа компаний ""А101""",PropTech,,0
-21,МГТУ СТАНКИН,EdTech|IndustrialTech,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,1
-22,Лаборатория Касперского,Cybersecurity|FinTech,Блокчейн|Интернет вещей,0
-23,MTS StartUp Hub,AgroTech|Transport & Logistics|InsuranceTech|RetailTech|CleanTech|FinTech,Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение,0
-24,Мосэкомониторинг,CleanTech,Зеленые технологии,1
-25,Компания Simfer,Business Software|RetailTech,,0
-26,Государственный центральный музей современной истории России,EdTech|PropTech|Entertainment|Мedia & Communication,AR/VR|Интернет вещей|Робототехника,1
-27,Музей моды,RetailTech|Entertainment,,1
-28,Государственный университет управления,EdTech|SportTech,AR/VR|Искусственный интеллект и машинное обучение,1
-29,Российский университет дружбы народов,EdTech|CleanTech|Healthcare,,1
-30,Дворец творчества детей и молодежи на Миусах,EdTech,AR/VR|Аддитивные технологии,1
-31,МегаФон,Telecom|Advertising & Marketing|RetailTech,Big Data,0
-32,Московский завод тепловой автоматики,PropTech|IndustrialTech|CleanTech,Интернет вещей,0
-33,Реабилитационная школа-интернат №32,EdTech|HRTech,,1
-34,Федеральный центр мозга и нейротехнологий,Healthcare,Биотехнологии,1
-35,Пансионат для инвалидов по зрению,Healthcare,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,1
-36,"Научно-технический центр ""Модуль""",Transport & Logistics|SafetyTech|Healthcare,Беспилотники|Интернет вещей|Искусственный интеллект и машинное обучение,0
-37,"Технопарк ""Мосгормаш""",PropTech|IndustrialTech|CleanTech|Healthcare,,1
-38,Научно-практический клинический центр диагностики и телемедицинских технологий,CleanTech|Healthcare,,1
-39,Школа № 1306,EdTech,AR/VR|Аддитивные технологии,1
-40,"Инновационно-образовательный комплекс ""Техноград""",EdTech|Entertainment|Travel,,0
-41,"Сеть клиник ""МЕДСИ""",Healthcare,Аддитивные технологии,0
-42,Сеченовский Университет,EdTech|Healthcare,AR/VR|Big Data|Аддитивные технологии,1
-43,Пожарно-спасательный центр,SafetyTech|CleanTech,,1
-44,Научно-практический реабилитационный центр,EdTech|Healthcare,,1
-45,Российский национальный исследовательский медицинский университет им. Н.И. Пирогова,Healthcare,Биотехнологии,1
-46,Реабилитационно-образовательный центр № 76,EdTech|CleanTech|Healthcare,,1
-47,Национальный медико-хирургический центр им. Н.И. Пирогова,Healthcare,AR/VR|Робототехника,1
-48,Московская городская поисково-спасательная служба на водных объектах,SafetyTech,,1
-49,Московский городской центр реабилитации,EdTech|Healthcare,,1
-50,Центр реабилитации и образования №7,EdTech|CleanTech|Healthcare,,1
-51,"Объединенная кондитерская сеть (кондитерский магазин ""Аленка"")",IndustrialTech|CleanTech|FoodTech,,0
-52,Комплексный реабилитационно-образовательный центр,EdTech|CleanTech|Healthcare,,1
-53,Центр патологии речи и нейрореабилитации,Healthcare,AR/VR,1
-54,Сеть коворкингов Deworkacy,PropTech|HRTech|Business Software,,0
-55,Городская клиническая больница №67 им. Л.А. Ворохобова,Healthcare,AR/VR|Искусственный интеллект и машинное обучение,1
-56,Школа № 1535,EdTech|CleanTech,AR/VR,1
-57,ВДНХ,CleanTech|Entertainment,AR/VR|Зеленые технологии,0
-58,Центр дизайна Artplay,PropTech|SafetyTech|Entertainment,,0
-59,Логистическая компания Nawinia,Transport & Logistics,Big Data,0
-60,Group-IB,Cybersecurity,,0
-61,СитиТранзит,Transport & Logistics,,0
-62,Росбизнесбанк,Business Software|FinTech,,0
-63,"Национальный исследовательский университет ""Высшая школа экономики""",EdTech|PropTech|LegalTech|Business Software,Big Data|Искусственный интеллект и машинное обучение,1
-64,НМИЦ онкологии им. Н.Н. Блохина,Healthcare,,1
-65,МИРБИС,EdTech|SportTech,,0
-66,ВкусВилл,RetailTech,,0
-67,"Научно-производственное предприятие ""КРИПТОН""",Telecom,,0
-68,ЛидерЛайт,IndustrialTech|CleanTech,Новые и портативные источники энергии,0
-69,Пожтехника,SafetyTech,,0
-70,"Технопарк ""Строгино""",SafetyTech|CleanTech|Healthcare,,1
-71,Мосгортур,EdTech|Business Software|Entertainment,AR/VR|Искусственный интеллект и машинное обучение,1
-72,Билайн,Cybersecurity|Transport & Logistics|LegalTech|Advertising & Marketing|RetailTech|Entertainment|FinTech,AR/VR|Big Data|Интернет вещей,0
-73,IDS Боржоми,Transport & Logistics|HRTech|Business Software|RetailTech,Big Data|Искусственный интеллект и машинное обучение,0
-74,Genotek,Healthcare,Big Data|Искусственный интеллект и машинное обучение,0
-75,"Культурный центр ""Киевский""",Business Software|Entertainment,AR/VR|Искусственный интеллект и машинное обучение|Робототехника,1
-76,"Дизайн-квартал ""Флакон""",AgroTech|Cybersecurity|EdTech|Transport & Logistics|SpaceTech|PropTech|Telecom|IndustrialTech|Gaming|SportTech|InsuranceTech|LegalTech|FashionTech|HRTech|Business Software|Advertising & Marketing|Consumer Goods & Services|RetailTech|SafetyTech|CleanTech|E-commerce|Entertainment|FinTech|FoodTech|Healthcare|Travel|Мedia & Communication,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,0
-77,"ООО ""Кометрика""",EdTech,AR/VR|Big Data|Блокчейн,0
-78,"Первая концессионная корпорация (ООО ""ТУБИМ"")",PropTech,3D моделирование,0
-79,"Банк ""Открытие""",Business Software|RetailTech|FinTech,Big Data|Биометрия|Искусственный интеллект и машинное обучение|Компьютерное зрение,0
-80,"ГК ""Самолет""",PropTech,3D моделирование|AR/VR,0
-81,"ООО ""Континент""",SafetyTech,Новые материалы,0
-82,Морозовская детская городская клиническая больница,Healthcare,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,0
-83,ЭНКА ТЦ,PropTech|RetailTech|SafetyTech,Биометрия|Интернет вещей,0
-84,RoboHall,Entertainment|Мedia & Communication,Робототехника,0
-85,"АО ""Интеко""",PropTech,Big Data|Искусственный интеллект и машинное обучение,0
-86,Банк ВТБ,Cybersecurity|HRTech|Advertising & Marketing|FinTech,,0
-87,ГКБ №1 им. Н.И. Пирогова,Healthcare,,0
-88,Городская клиническая больница №40,Healthcare,,1
-89,Инфогород (ДИТ города Москвы),Telecom,AR/VR|Big Data|Интернет вещей|Робототехника,1
-90,Культурный центр ЗИЛ,Entertainment,Интернет вещей,1
-91,Московский продюсерский центр,Entertainment,AR/VR|Робототехника,1
-92,Научно-исследовательский институт железнодорожного транспорта,Transport & Logistics,,0
-93,Научно-практический центр медико-социальной реабилитации им. Л.И. Швецовой,EdTech|Healthcare,AR/VR|Искусственный интеллект и машинное обучение|Нейротехнологии|Робототехника,1
-94,Реабилитационно-образовательный центр № 105,EdTech|CleanTech|Healthcare,Зеленые технологии,1
-95,"Реабилитационный центр для инвалидов ""Ремесла""",SafetyTech,Интернет вещей,1
-96,Реабилитационный центр для инвалидов с использованием методов физической культуры и спорта ,Healthcare,AR/VR,1
-97,СИБУР,HRTech,,0
-98,"Технопарк ""Слава""",PropTech|IndustrialTech|Business Software,,0
-99,"Троицкий реабилитационно-образовательный центр ""Солнышко""",Healthcare|Мedia & Communication,AR/VR,1
-100,Федерация тхэквондо (МФТ) России,SportTech,,0
-101,Х5 Retail Group,LegalTech|HRTech|Business Software|RetailTech|FinTech,,0
-102,"Центр комплексной реабилитации инвалидов ""Бутово""",EdTech|Healthcare,,1
-103,Центр реабилитации и образования № 4,EdTech|Healthcare,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,1
-104,Центр социокультурной реабилитации Дианы Гурцкая,EdTech|Healthcare,,1
-105,"ЦРИ ""Красная Пахра""",Healthcare,,1
-106,Школа №1329,EdTech,AR/VR|Аддитивные технологии,1
-107,Школа-интернат № 1 для обучения и реабилитации слепых,EdTech,,1
-108,Московский авиационный центр,PropTech|SafetyTech,,1
-109,Московский информационно-технологический университет – Московский архитектурно-строительный институт,EdTech,,0
-110,Expanse Capital,HRTech|Healthcare,,0
-111,Samsonite,Business Software|Advertising & Marketing,,0
-112,Академия-Т,FoodTech|Healthcare,,0
-113,Библиотека №214 им. Ю.А. Гагарина,EdTech,AR/VR|Зеленые технологии,1
-114,Город-Сад,EdTech|CleanTech|FoodTech|Healthcare,,0
-115,Детская городская клиническая больница им. Н.Ф. Филатова,Healthcare,,1
-116,"Добровольное общество содействия армии, авиации и флоту России",EdTech,,0
-117,Корпорация развития Зеленограда,Business Software,,1
-118,Московский технический университет связи и информатики,EdTech,,1
-119,Московский финансово-юридический университет МФЮА,EdTech,,0
-120,НИИ СП им. Н.В. Склифосовского,Healthcare,,1
-121,"Пансионат для пожилых людей ""100+""",Healthcare,,0
-122,"ПАО ""Калибр""",Transport & Logistics|Telecom|IndustrialTech|Healthcare,Аддитивные технологии|Беспилотники|Новые и портативные источники энергии,0
-123,ПЛАЗАРИУМ,IndustrialTech|CleanTech|Healthcare,,0
-124,"Районный центр ""Ангара""",SportTech|RetailTech,,0
-125,Российский государственный геологоразведочный университет им. Серго Орджоникидзе,EdTech,,1
-126,"Сеть кафе ""PRIME""",FoodTech,,0
-127,"Сеть ресторанов ""Нияма""",FoodTech,Интернет вещей,0
-128,Тимирязевская академия,AgroTech,,1
-129,Центр медицинской профилактики,Healthcare,,1
-130,Центральная универсальная научная библиотека им. Н.А. Некрасова,EdTech,,1
-131,Объединенная энергетическая компания,IndustrialTech,,0
-132,Мемориальный музей космонавтики,EdTech|Advertising & Marketing|Entertainment,,1
-133,"ПАО ""Северсталь""",Transport & Logistics|IndustrialTech|Advertising & Marketing,Зеленые технологии|Новые материалы,0
-134,"МПО ООО ""Деловая Россия""",,,0
-135,"НТЦ ""Бакор""",IndustrialTech,Новые материалы,0
-136,Учебно-методический центр по гражданской обороне и чрезвычайным ситуациям города Москвы,EdTech|SafetyTech,,1
-137,Моссвет,Consumer Goods & Services,,1
-138,"АО КБ ""ЮНИСТРИМ""",FinTech,,0
-139,TUMO MOSCOW,EdTech,,0
-140,ООО «Мангазея Девелопмент»,PropTech|HRTech,,0
-141,АО «Москоллектор»,,,0
-142,Чемпионика,SportTech,,0
-143,РЭУ им. Г.В. Плеханова,EdTech,AR/VR|Искусственный интеллект и машинное обучение,1
-144,Федерация санного спорта России,SportTech,,0
-145,"Реабилитационный центр ""Преодоление""",Healthcare,,0
-146,ЦОДД,Transport & Logistics,,1
-147,Группа компаний «Москабельмет»,IndustrialTech,Искусственный интеллект и машинное обучение|Робототехника,0
-148,"АНО ""Цифровая трансформация""",EdTech|Transport & Logistics|Telecom|Healthcare,,0
-149,Музей русского импрессионизма,EdTech|Advertising & Marketing|Entertainment,,0
-150,"Рейтинговое агентство ""Русмет""",CleanTech,,0
-151,Лента,RetailTech,,0
-152,Ресурсный центр универсального дизайна и реабилитационных технологий,Healthcare,Big Data|Искусственный интеллект и машинное обучение,1
-153,Федерация гребного спорта России,SportTech,,0
-154,Центр развития картинга,SportTech,,0
-155,Федерация силового многоборья,SportTech,,0
-156,Московский ПОЛИТЕХ,EdTech,AR/VR,1
-157,"Боксерский клуб ""Ударник""",SportTech,,0
-158,Sinteza,PropTech,,0
-159,Московский физико-технический институт,EdTech,,1
-160,Московский государственный медико-стоматологический университет им. А.И. Евдокимова,EdTech|Healthcare,AR/VR|Робототехника,1
-161,Скандинавский центр здоровья,Healthcare,,0
-162,Кредит Европа Банк,FinTech,,0
+,Название объекта,Рынок,Технологии,type,Сайт
+0,Делимобиль,Transport & Logistics,,0,https://delimobil.ru/
+1,Гидромашсервис,IndustrialTech,,0,http://www.grouphms.ru/
+2,"Научно-производственная компания ""Пожхимзащита""",SafetyTech,,0,https://www.npk-phz.ru/
+3,"Технополис ""Москва""",IndustrialTech|CleanTech|Healthcare,,0,https://technomoscow.ru/
+4,"Научно-производственное предприятие ""Темп"" им. Ф. Короткова",IndustrialTech,Новые материалы|Робототехника,0,http://npptemp.com/
+5,Ланцет,Cybersecurity|EdTech|RetailTech|Healthcare,,0,http://www.lancetpharm.ru/
+6,SberCloud,Cybersecurity|Business Software,Big Data|Искусственный интеллект и машинное обучение,0,https://sbercloud.ru/
+7,Московский техникум креативных индустрий им. Л.Б.Красина,EdTech,AR/VR,1,https://krasina.mskobr.ru/
+8,Агентство реализации социально-политических инициатив,LegalTech|Мedia & Communication,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,0,http://arspi.ru/
+9,Российская государственная библиотека для слепых,EdTech|Consumer Goods & Services,,1,http://rgbs.ru/
+10,Российский геронтологический научно-клинический центр,EdTech|Healthcare,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,1,http://rgnkc.ru/
+11,"Сеть клиник ""Семейный доктор""",Healthcare,Big Data|Аддитивные технологии|Искусственный интеллект и машинное обучение,0,https://www.fdoctor.ru/
+12,Институт экономики и антикризисного управления,EdTech,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,0,https://ieay.ru/
+13,"Культурный центр ""Вдохновение""",Entertainment,AR/VR,1,https://v-v-v.ru/
+14,MANUFAQTURY,PropTech|Business Software|SafetyTech,Биометрия|Искусственный интеллект и машинное обучение,0,https://manufaqtury.com/
+15,"Национальная сеть пансионатов для пожилых людей ""МИРРА""",CleanTech|Healthcare,,0,https://mirra-1.ru/
+16,Московский инженерно-физический институт,EdTech|SportTech|Business Software,AR/VR|Искусственный интеллект и машинное обучение,1,https://mephi.ru/
+17,Московский институт электронной техники,EdTech|SportTech|Business Software,AR/VR|Искусственный интеллект и машинное обучение,1,https://www.miet.ru/
+18,"Университет ""Синергия""",EdTech,,0,https://synergy.ru/
+19,Городская клиническая больница №17,Healthcare,AR/VR|Big Data,1,https://gkb17.ru/
+20,"Группа компаний ""А101""",PropTech,,0,https://a101.ru/
+21,МГТУ СТАНКИН,EdTech|IndustrialTech,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,1,https://stankin.ru/
+22,Лаборатория Касперского,Cybersecurity|FinTech,Блокчейн|Интернет вещей,0,https://www.kaspersky.ru/
+23,MTS StartUp Hub,AgroTech|Transport & Logistics|InsuranceTech|RetailTech|CleanTech|FinTech,Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение,0,https://startup.mts.ru/
+24,Мосэкомониторинг,CleanTech,Зеленые технологии,1,https://mosecom.mos.ru/
+25,Компания Simfer,Business Software|RetailTech,,0,https://simfer.info/
+26,Государственный центральный музей современной истории России,EdTech|PropTech|Entertainment|Мedia & Communication,AR/VR|Интернет вещей|Робототехника,1,https://www.sovrhistory.ru/
+27,Музей моды,RetailTech|Entertainment,,1,http://fashion-museum.ru/
+28,Государственный университет управления,EdTech|SportTech,AR/VR|Искусственный интеллект и машинное обучение,1,https://guu.ru/
+29,Российский университет дружбы народов,EdTech|CleanTech|Healthcare,,1,http://www.rudn.ru/
+30,Дворец творчества детей и молодежи на Миусах,EdTech,AR/VR|Аддитивные технологии,1,https://cdt.mskobr.ru/
+31,МегаФон,Telecom|Advertising & Marketing|RetailTech,Big Data,0,https://moscow.megafon.ru/
+32,Московский завод тепловой автоматики,PropTech|IndustrialTech|CleanTech,Интернет вещей,0,https://www.mzta.ru/
+33,Реабилитационная школа-интернат №32,EdTech|HRTech,,1,https://schlg32.mskobr.ru/
+34,Федеральный центр мозга и нейротехнологий,Healthcare,Биотехнологии,1,https://xn--l1acti.xn--p1ai/
+35,Пансионат для инвалидов по зрению,Healthcare,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,1,http://pdipz.ru/pan.html
+36,"Научно-технический центр ""Модуль""",Transport & Logistics|SafetyTech|Healthcare,Беспилотники|Интернет вещей|Искусственный интеллект и машинное обучение,0,https://www.module.ru/
+37,"Технопарк ""Мосгормаш""",PropTech|IndustrialTech|CleanTech|Healthcare,,1,http://tpmgm.ru
+38,Научно-практический клинический центр диагностики и телемедицинских технологий,CleanTech|Healthcare,,1,http://medradiology.moscow/
+39,Школа № 1306,EdTech,AR/VR|Аддитивные технологии,1,https://gymg1306.mskobr.ru
+40,"Инновационно-образовательный комплекс ""Техноград""",EdTech|Entertainment|Travel,,0,https://technograd.moscow/
+41,"Сеть клиник ""МЕДСИ""",Healthcare,Аддитивные технологии,0,https://medsi.ru/
+42,Сеченовский Университет,EdTech|Healthcare,AR/VR|Big Data|Аддитивные технологии,1,https://www.sechenov.ru/
+43,Пожарно-спасательный центр,SafetyTech|CleanTech,,1,https://psc.mos.ru/
+44,Научно-практический реабилитационный центр,EdTech|Healthcare,,1,http://rebcen.ru/
+45,Российский национальный исследовательский медицинский университет им. Н.И. Пирогова,Healthcare,Биотехнологии,1,http://rsmu.ru
+46,Реабилитационно-образовательный центр № 76,EdTech|CleanTech|Healthcare,,1,https://schsi76.mskobr.ru
+47,Национальный медико-хирургический центр им. Н.И. Пирогова,Healthcare,AR/VR|Робототехника,1,http://www.pirogov-center.ru/
+48,Московская городская поисково-спасательная служба на водных объектах,SafetyTech,,1,http://mgpss.mos.ru
+49,Московский городской центр реабилитации,EdTech|Healthcare,,1,http://www.moscow-dcpcentre.ru
+50,Центр реабилитации и образования №7,EdTech|CleanTech|Healthcare,,1,http://schlg7.dszn.ru
+51,"Объединенная кондитерская сеть (кондитерский магазин ""Аленка"")",IndustrialTech|CleanTech|FoodTech,,0,https://www.uniconf.ru/
+52,Комплексный реабилитационно-образовательный центр,EdTech|CleanTech|Healthcare,,1,www.krots.mskobr.ru
+53,Центр патологии речи и нейрореабилитации,Healthcare,AR/VR,1,www.cprin.ru
+54,Сеть коворкингов Deworkacy,PropTech|HRTech|Business Software,,0,https://www.deworkacy.ru/workspace
+55,Городская клиническая больница №67 им. Л.А. Ворохобова,Healthcare,AR/VR|Искусственный интеллект и машинное обучение,1,www.67gkb.ru
+56,Школа № 1535,EdTech|CleanTech,AR/VR,1,lyc1535.mskobr.ru
+57,ВДНХ,CleanTech|Entertainment,AR/VR|Зеленые технологии,0,vdnh.ru
+58,Центр дизайна Artplay,PropTech|SafetyTech|Entertainment,,0,www.artplay.ru
+59,Логистическая компания Nawinia,Transport & Logistics,Big Data,0,https://nawinia.com/
+60,Group-IB,Cybersecurity,,0,https://www.group-ib.ru/
+61,СитиТранзит,Transport & Logistics,,0,https://taxishokolad.ru/
+62,Росбизнесбанк,Business Software|FinTech,,0,https://www.rbb.ru/ru/
+63,"Национальный исследовательский университет ""Высшая школа экономики""",EdTech|PropTech|LegalTech|Business Software,Big Data|Искусственный интеллект и машинное обучение,1,https://www.hse.ru/
+64,НМИЦ онкологии им. Н.Н. Блохина,Healthcare,,1,https://www.ronc.ru/
+65,МИРБИС,EdTech|SportTech,,0,https://mirbis.ru/
+66,ВкусВилл,RetailTech,,0,https://vkusvill.ru/
+67,"Научно-производственное предприятие ""КРИПТОН""",Telecom,,0,http://www.kripton.ru/
+68,ЛидерЛайт,IndustrialTech|CleanTech,Новые и портативные источники энергии,0,https://www.leadlight.ru/
+69,Пожтехника,SafetyTech,,0,http://firepro.ru/
+70,"Технопарк ""Строгино""",SafetyTech|CleanTech|Healthcare,,1,http://www.tpstrogino.ru/
+71,Мосгортур,EdTech|Business Software|Entertainment,AR/VR|Искусственный интеллект и машинное обучение,1,https://mosgortur.ru/
+72,Билайн,Cybersecurity|Transport & Logistics|LegalTech|Advertising & Marketing|RetailTech|Entertainment|FinTech,AR/VR|Big Data|Интернет вещей,0,https://moskva.beeline.ru/customers/products/
+73,IDS Боржоми,Transport & Logistics|HRTech|Business Software|RetailTech,Big Data|Искусственный интеллект и машинное обучение,0,https://ids-borjomi.ru/
+74,Genotek,Healthcare,Big Data|Искусственный интеллект и машинное обучение,0,https://www.genotek.ru/
+75,"Культурный центр ""Киевский""",Business Software|Entertainment,AR/VR|Искусственный интеллект и машинное обучение|Робототехника,1,https://kievsky.space/
+76,"Дизайн-квартал ""Флакон""",AgroTech|Cybersecurity|EdTech|Transport & Logistics|SpaceTech|PropTech|Telecom|IndustrialTech|Gaming|SportTech|InsuranceTech|LegalTech|FashionTech|HRTech|Business Software|Advertising & Marketing|Consumer Goods & Services|RetailTech|SafetyTech|CleanTech|E-commerce|Entertainment|FinTech|FoodTech|Healthcare|Travel|Мedia & Communication,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,0,https://flacon.ru/
+77,"ООО ""Кометрика""",EdTech,AR/VR|Big Data|Блокчейн,0,https://cometrica.ru
+78,"Первая концессионная корпорация (ООО ""ТУБИМ"")",PropTech,3D моделирование,0,https://pkk.ru/
+79,"Банк ""Открытие""",Business Software|RetailTech|FinTech,Big Data|Биометрия|Искусственный интеллект и машинное обучение|Компьютерное зрение,0,https://www.open.ru/about?from=main_menu
+80,"ГК ""Самолет""",PropTech,3D моделирование|AR/VR,0,https://samoletgroup.ru/
+81,"ООО ""Континент""",SafetyTech,Новые материалы,0,https://k-dez.ru/
+82,Морозовская детская городская клиническая больница,Healthcare,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,0,http://xn--90adclrioar.xn--p1ai/
+83,ЭНКА ТЦ,PropTech|RetailTech|SafetyTech,Биометрия|Интернет вещей,0,https://enkatc.ru/
+84,RoboHall,Entertainment|Мedia & Communication,Робототехника,0,http://robohall.com
+85,"АО ""Интеко""",PropTech,Big Data|Искусственный интеллект и машинное обучение,0,https://new.inteco.ru/
+86,Банк ВТБ,Cybersecurity|HRTech|Advertising & Marketing|FinTech,,0,https://startup.vtb.ru/
+87,ГКБ №1 им. Н.И. Пирогова,Healthcare,,0,http://gkb1.ru/
+88,Городская клиническая больница №40,Healthcare,,1,https://gkb40dzm.ru/
+89,Инфогород (ДИТ города Москвы),Telecom,AR/VR|Big Data|Интернет вещей|Робототехника,1,https://ig.mos.ru/
+90,Культурный центр ЗИЛ,Entertainment,Интернет вещей,1,https://zilcc.ru/
+91,Московский продюсерский центр,Entertainment,AR/VR|Робототехника,1,https://mosproducer.ru/
+92,Научно-исследовательский институт железнодорожного транспорта,Transport & Logistics,,0,https://www.vniizht.ru/
+93,Научно-практический центр медико-социальной реабилитации им. Л.И. Швецовой,EdTech|Healthcare,AR/VR|Искусственный интеллект и машинное обучение|Нейротехнологии|Робототехника,1,https://cmir.info/
+94,Реабилитационно-образовательный центр № 105,EdTech|CleanTech|Healthcare,Зеленые технологии,1,https://schuvi105.mskobr.ru/#/
+95,"Реабилитационный центр для инвалидов ""Ремесла""",SafetyTech,Интернет вещей,1,https://www.rcdiremesla.ru/
+96,Реабилитационный центр для инвалидов с использованием методов физической культуры и спорта ,Healthcare,AR/VR,1,http://zelrc.ru/
+97,СИБУР,HRTech,,0,https://www.sibur.ru/
+98,"Технопарк ""Слава""",PropTech|IndustrialTech|Business Software,,0,https://technopark-slava.ru/
+99,"Троицкий реабилитационно-образовательный центр ""Солнышко""",Healthcare|Мedia & Communication,AR/VR,1,https://askchtn.mskobr.ru/#/
+100,Федерация тхэквондо (МФТ) России,SportTech,,0,https://www.tkdrus.ru/
+101,Х5 Retail Group,LegalTech|HRTech|Business Software|RetailTech|FinTech,,0,https://www.x5.ru/ru/
+102,"Центр комплексной реабилитации инвалидов ""Бутово""",EdTech|Healthcare,,1,https://rcbutovo.mos.ru/
+103,Центр реабилитации и образования № 4,EdTech|Healthcare,3D моделирование|AR/VR|Big Data|Аддитивные технологии|Беспилотники|Биометрия|Биотехнологии|Блокчейн|Зеленые технологии|Интернет вещей|Искусственный интеллект и машинное обучение|Компьютерное зрение|Нанотехнологии|Нейротехнологии|Новые и портативные источники энергии|Новые материалы|Робототехника,1,https://schlg4.mskobr.ru/#/
+104,Центр социокультурной реабилитации Дианы Гурцкая,EdTech|Healthcare,,1,https://dszn.ru/department/subordinate/1855
+105,"ЦРИ ""Красная Пахра""",Healthcare,,1,http://kpahra.ru/
+106,Школа №1329,EdTech,AR/VR|Аддитивные технологии,1,https://sch1329.mskobr.ru/#/
+107,Школа-интернат № 1 для обучения и реабилитации слепых,EdTech,,1,https://schisv1.mskobr.ru/#/
+108,Московский авиационный центр,PropTech|SafetyTech,,1,https://mosavia.ru/
+109,Московский информационно-технологический университет – Московский архитектурно-строительный институт,EdTech,,0,https://mitu-masi.ru/
+110,Expanse Capital,HRTech|Healthcare,,0,http://expansecapital.tech/
+111,Samsonite,Business Software|Advertising & Marketing,,0,https://www.samsonite.ru/
+112,Академия-Т,FoodTech|Healthcare,,0,https://ac-t.ru/
+113,Библиотека №214 им. Ю.А. Гагарина,EdTech,AR/VR|Зеленые технологии,1,https://gagarin.bibliozao.ru/
+114,Город-Сад,EdTech|CleanTech|FoodTech|Healthcare,,0,https://gorod-sad.com
+115,Детская городская клиническая больница им. Н.Ф. Филатова,Healthcare,,1,https://filatovmos.ru/
+116,"Добровольное общество содействия армии, авиации и флоту России",EdTech,,0,http://dosaafmoscow.ru/
+117,Корпорация развития Зеленограда,Business Software,,1,http://www.kpkrz.ru/
+118,Московский технический университет связи и информатики,EdTech,,1,https://mtuci.ru/
+119,Московский финансово-юридический университет МФЮА,EdTech,,0,https://www.mfua.ru/
+120,НИИ СП им. Н.В. Склифосовского,Healthcare,,1,https://sklif.mos.ru/
+121,"Пансионат для пожилых людей ""100+""",Healthcare,,0,https://my100plus.ru/
+122,"ПАО ""Калибр""",Transport & Logistics|Telecom|IndustrialTech|Healthcare,Аддитивные технологии|Беспилотники|Новые и портативные источники энергии,0,https://kalibr.tech/
+123,ПЛАЗАРИУМ,IndustrialTech|CleanTech|Healthcare,,0,http://www.plazarium.com/ru/
+124,"Районный центр ""Ангара""",SportTech|RetailTech,,0,https://www.adggroup.ru/angara
+125,Российский государственный геологоразведочный университет им. Серго Орджоникидзе,EdTech,,1,https://mgri.ru/
+126,"Сеть кафе ""PRIME""",FoodTech,,0,https://www.prime-star.ru/
+127,"Сеть ресторанов ""Нияма""",FoodTech,Интернет вещей,0,https://www.niyama.ru/
+128,Тимирязевская академия,AgroTech,,1,https://www.timacad.ru/
+129,Центр медицинской профилактики,Healthcare,,1,http://cmpmos.ru/
+130,Центральная универсальная научная библиотека им. Н.А. Некрасова,EdTech,,1,http://nekrasovka.ru/
+131,Объединенная энергетическая компания,IndustrialTech,,0,https://uneco.ru/
+132,Мемориальный музей космонавтики,EdTech|Advertising & Marketing|Entertainment,,1,https://kosmo-museum.ru/
+133,"ПАО ""Северсталь""",Transport & Logistics|IndustrialTech|Advertising & Marketing,Зеленые технологии|Новые материалы,0,https://innovations.severstal.com/
+134,"МПО ООО ""Деловая Россия""",,,0,https://deloros-msk.ru/
+135,"НТЦ ""Бакор""",IndustrialTech,Новые материалы,0,https://www.ntcbakor.ru/
+136,Учебно-методический центр по гражданской обороне и чрезвычайным ситуациям города Москвы,EdTech|SafetyTech,,1,https://umcgochs.mos.ru/
+137,Моссвет,Consumer Goods & Services,,1,www.mossvet.ru
+138,"АО КБ ""ЮНИСТРИМ""",FinTech,,0,https://unistream.ru/
+139,TUMO MOSCOW,EdTech,,0,https://tumo.moscow/
+140,ООО «Мангазея Девелопмент»,PropTech|HRTech,,0,https://mangazeya.ru/
+141,АО «Москоллектор»,,,0,http://www.moscollector.ru/
+142,Чемпионика,SportTech,,0,https://www.championika.ru/
+143,РЭУ им. Г.В. Плеханова,EdTech,AR/VR|Искусственный интеллект и машинное обучение,1,https://www.rea.ru/
+144,Федерация санного спорта России,SportTech,,0,http://rusluge.ru/
+145,"Реабилитационный центр ""Преодоление""",Healthcare,,0,https://preo.ru/
+146,ЦОДД,Transport & Logistics,,1,http://www.gucodd.ru/
+147,Группа компаний «Москабельмет»,IndustrialTech,Искусственный интеллект и машинное обучение|Робототехника,0,https://www.mkm.ru/
+148,"АНО ""Цифровая трансформация""",EdTech|Transport & Logistics|Telecom|Healthcare,,0,https://ано-цт.рф/
+149,Музей русского импрессионизма,EdTech|Advertising & Marketing|Entertainment,,0,http://www.rusimp.su/
+150,"Рейтинговое агентство ""Русмет""",CleanTech,,0,https://rusmet.ru/
+151,Лента,RetailTech,,0,lenta.com
+152,Ресурсный центр универсального дизайна и реабилитационных технологий,Healthcare,Big Data|Искусственный интеллект и машинное обучение,1,https://rcud-rt.ru/
+153,Федерация гребного спорта России,SportTech,,0,https://rowingrussia.ru/
+154,Центр развития картинга,SportTech,,0,forza-karting.ru
+155,Федерация силового многоборья,SportTech,,0,http://fsm-msk.ru/
+156,Московский ПОЛИТЕХ,EdTech,AR/VR,1,https://mospolytech.ru
+157,"Боксерский клуб ""Ударник""",SportTech,,0,http://extrimpower.ru/
+158,Sinteza,PropTech,,0,https://sinteza.ru/
+159,Московский физико-технический институт,EdTech,,1,https://mipt.ru/
+160,Московский государственный медико-стоматологический университет им. А.И. Евдокимова,EdTech|Healthcare,AR/VR|Робототехника,1,https://www.msmsu.ru/
+161,Скандинавский центр здоровья,Healthcare,,0,scz.ru
+162,Кредит Европа Банк,FinTech,,0,https://www.crediteurope.ru/

@@ -1,71 +1,71 @@
-,Коммерческое наименование,Рыночные ниши,Технологии,Бизнес-модель,type
-0,Иркут,Transport & Logistics,,B2B; B2G,2
-1,"Издательство ""Просвещение""",EdTech; Мedia & Communication,AR/VR,B2C; B2B; B2G,2
-2,Р-фарм,Healthcare,Биотехнологии,B2C; B2B; B2G,2
-3,Яндекс,Advertising & Marketing; Business Software; E-commerce; Transport & Logistics,BigData; Искусственный интеллект и машинное обучение; Компьютерное зрение,B2C; B2B,2
-4,ВТБ,FinTech,,B2C; B2B,2
-5,"Банк ""Открытие""",FinTech,,B2C; B2B,2
-6,МТС,Telecom,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2C; B2B; B2G,2
-7,КРОК,Business Software,AR/VR; BigData; Блокчейн; Интернет вещей; Искусственный интеллект и машинное обучение,B2B,2
-8,Tele2,Telecom,BigData; Интернет вещей,B2C; B2B,2
-9,Лаборатория Касперского,Cybersecurity,BigData; Блокчейн; Искусственный интеллект и машинное обучение,B2C; B2B; B2G,2
-10,QIWI,FinTech,,B2C; B2B,2
-11,IBS,Business Software; Cybersecurity,BigData,B2B; B2G,2
-12,ЛАНИТ,Business Software,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2B; B2G,2
-13,Mail.ru Group,Business Software; E-commerce; Gaming; Мedia & Communication,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2C; B2B,2
-14,Сбер,FinTech,BigData; Биометрия; Блокчейн; Искусственный интеллект и машинное обучение,B2C; B2B; B2G,2
-15,РОСТЕЛЕКОМ,Telecom,BigData; Биометрия; Интернет вещей,B2C; B2B; B2G,2
-16,Билайн,Telecom,BigData; Интернет вещей,B2C; B2B; B2G,2
-17,"Группа компаний ""Калашников""",,,,2
-18,МегаФон,Telecom,BigData; Интернет вещей,B2C; B2B; B2G,2
-19,INVITRO,Healthcare,,B2C; B2B,2
-20,ТВЭЛ,IndustrialTech,Новые и портативные источники энергии,B2B,2
-21,Уралхим,AgroTech; IndustrialTech,Биотехнологии,B2B,2
-22,Росатом,IndustrialTech,Новые и портативные источники энергии,B2B; B2G,2
-23,Bayer,Healthcare,Биотехнологии,B2C; B2B; B2G,2
-24,PwC,LegalTech,,B2B; B2G,2
-25,Газпром нефть,IndustrialTech,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2C; B2B,2
-26,Гознак,FinTech; LegalTech,Биометрия; Новые материалы,B2B; B2G,2
-27,Microsoft,Business Software,BigData; Искусственный интеллект и машинное обучение,B2C; B2B,2
-28,Татнефть,IndustrialTech,,B2C; B2B,2
-29,РоссельхозБанк,AgroTech; FinTech,,B2C; B2B; B2G,2
-30,X5 Retail Group,E-commerce; FoodTech; RetailTech; Transport & Logistics,BigData; Искусственный интеллект и машинное обучение; Компьютерное зрение; Робототехника,B2C; B2B,2
-31,Уралсиб,FinTech,,B2C; B2B,2
-32,ОДК,IndustrialTech; Transport & Logistics,,B2B; B2G,2
-33,Вертолеты России,Transport & Logistics,Беспилотники,B2B; B2G,2
-34,Почта России,Transport & Logistics,,B2C; B2B; B2G,2
-35,МЕДСИ,Healthcare,,B2C; B2B2C,2
-36,СИБУР,IndustrialTech,,B2B,2
-37,Ростех,Healthcare; IndustrialTech; PropTech; Telecom,BigData; Интернет вещей; Искусственный интеллект и машинное обучение; Новые материалы,B2B; B2G,2
-38,РЖД,Transport & Logistics,,B2C; B2B; B2G,2
-39,Кировский завод,IndustrialTech,,B2B; B2G,2
-40,Стратегические пункты управления,SpaceTech,,B2C; B2B,2
-41,Huawei,Telecom,Интернет вещей,B2C; B2B,2
-42,Газпромбанк,FinTech,,B2C; B2B,2
-43,ПИК,PropTech,,B2C; B2B,2
-44,Объединенная авиастроительная корпорация (ОАК),Transport & Logistics,Новые материалы,B2B; B2G,2
-45,Газпром,IndustrialTech,,B2B; B2B2C,2
-46,Северсталь,IndustrialTech,,B2B; B2G,2
-47,Магнит,E-commerce; FoodTech; RetailTech,,B2C,2
-48,S7 Airlines,Transport & Logistics,,B2C; B2B,2
-49,ЭФКО,FoodTech,Биотехнологии,B2C; B2B,2
-50,Россети,CleanTech,,B2C; B2B; B2G,2
-51,КАМАЗ,Transport & Logistics,Беспилотники; Искусственный интеллект и машинное обучение; Новые и портативные источники энергии,B2C; B2B; B2G,2
-52,Система,E-commerce; FinTech; Healthcare; Telecom,,B2B,2
-53,Райффайзенбанк,FinTech,,B2C; B2B,2
-54,Роскосмос,SpaceTech,,B2B; B2G,2
-55,Ингосстрах,InsuranceTech,,B2C; B2B,2
-56,АЛРОСА,IndustrialTech,,B2C; B2B,2
-57,Фармстандарт,Healthcare,,B2C; B2B,2
-58,ММК,IndustrialTech,,B2B,2
-59,ТМХ,IndustrialTech,,B2B; B2G,2
-60,,,,,2
-61,НЛМК,IndustrialTech,,B2B,2
-62,,,,,2
-63,ЛУКОЙЛ,IndustrialTech,,B2C; B2B,2
-64,Актион-МЦФЭР,EdTech; LegalTech; Мedia & Communication,,B2C; B2B; B2G,2
-65,,,,,2
-66,ВкусВилл,E-commerce; FoodTech,,B2C; B2B,2
-67,УЗТМ-КАРТЭКС,IndustrialTech; Transport & Logistics,,B2B,2
-68,ФОРЭНЕРГО,IndustrialTech,,B2B,2
-69,Лента,E-commerce; RetailTech,,B2C; B2B,2
+,Коммерческое наименование,Рыночные ниши,Технологии,Бизнес-модель,Сайт,type
+0,Иркут,Transport & Logistics,,B2B; B2G,www.irkut.com,2
+1,"Издательство ""Просвещение""",EdTech; Мedia & Communication,AR/VR,B2C; B2B; B2G,https://prosv.ru/,2
+2,Р-фарм,Healthcare,Биотехнологии,B2C; B2B; B2G,https://rpharm.ru/,2
+3,Яндекс,Advertising & Marketing; Business Software; E-commerce; Transport & Logistics,BigData; Искусственный интеллект и машинное обучение; Компьютерное зрение,B2C; B2B,https://yandex.ru/company/,2
+4,ВТБ,FinTech,,B2C; B2B,https://www.vtb.ru/,2
+5,"Банк ""Открытие""",FinTech,,B2C; B2B,https://www.open.ru/,2
+6,МТС,Telecom,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2C; B2B; B2G,https://moskva.mts.ru/,2
+7,КРОК,Business Software,AR/VR; BigData; Блокчейн; Интернет вещей; Искусственный интеллект и машинное обучение,B2B,https://www.croc.ru/,2
+8,Tele2,Telecom,BigData; Интернет вещей,B2C; B2B,https://msk.tele2.ru/,2
+9,Лаборатория Касперского,Cybersecurity,BigData; Блокчейн; Искусственный интеллект и машинное обучение,B2C; B2B; B2G,https://www.kaspersky.ru/,2
+10,QIWI,FinTech,,B2C; B2B,https://corp.qiwi.com/,2
+11,IBS,Business Software; Cybersecurity,BigData,B2B; B2G,https://www.ibs.ru/,2
+12,ЛАНИТ,Business Software,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2B; B2G,https://www.lanit.ru/,2
+13,Mail.ru Group,Business Software; E-commerce; Gaming; Мedia & Communication,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2C; B2B,https://corp.mail.ru/ru/,2
+14,Сбер,FinTech,BigData; Биометрия; Блокчейн; Искусственный интеллект и машинное обучение,B2C; B2B; B2G,http://www.sberbank.com; https://www.sberbank.ru/,2
+15,РОСТЕЛЕКОМ,Telecom,BigData; Биометрия; Интернет вещей,B2C; B2B; B2G,https://www.company.rt.ru/,2
+16,Билайн,Telecom,BigData; Интернет вещей,B2C; B2B; B2G,https://www.corp-beeline.ru/,2
+17,"Группа компаний ""Калашников""",,,,https://kalashnikovgroup.ru/ ; www.kalashnikovconcern.ru; izhmash.ru,2
+18,МегаФон,Telecom,BigData; Интернет вещей,B2C; B2B; B2G,https://corp.megafon.ru/,2
+19,INVITRO,Healthcare,,B2C; B2B,https://www.invitro.ru/,2
+20,ТВЭЛ,IndustrialTech,Новые и портативные источники энергии,B2B,https://tvel.ru/,2
+21,Уралхим,AgroTech; IndustrialTech,Биотехнологии,B2B,https://www.uralchem.ru/,2
+22,Росатом,IndustrialTech,Новые и портативные источники энергии,B2B; B2G,https://rosatom.ru/,2
+23,Bayer,Healthcare,Биотехнологии,B2C; B2B; B2G,https://www.bayer.ru/,2
+24,PwC,LegalTech,,B2B; B2G,https://www.pwc.ru/,2
+25,Газпром нефть,IndustrialTech,BigData; Интернет вещей; Искусственный интеллект и машинное обучение,B2C; B2B,https://www.gazprom-neft.ru/,2
+26,Гознак,FinTech; LegalTech,Биометрия; Новые материалы,B2B; B2G,www.goznak-mpf.ru; www.mmint.ru; www.mpf.goznak.ru; https://goznak.ru/,2
+27,Microsoft,Business Software,BigData; Искусственный интеллект и машинное обучение,B2C; B2B,https://www.microsoft.com/ru-ru/,2
+28,Татнефть,IndustrialTech,,B2C; B2B,https://www.tatneft.ru/,2
+29,РоссельхозБанк,AgroTech; FinTech,,B2C; B2B; B2G,https://www.rshb.ru/,2
+30,X5 Retail Group,E-commerce; FoodTech; RetailTech; Transport & Logistics,BigData; Искусственный интеллект и машинное обучение; Компьютерное зрение; Робототехника,B2C; B2B,https://www.x5.ru/ru/,2
+31,Уралсиб,FinTech,,B2C; B2B,https://www.uralsib.ru/,2
+32,ОДК,IndustrialTech; Transport & Logistics,,B2B; B2G,http://www.uecrus.com/rus,2
+33,Вертолеты России,Transport & Logistics,Беспилотники,B2B; B2G,www.russianhelicopters.aero; www.russianhelicopters.aero/ru,2
+34,Почта России,Transport & Logistics,,B2C; B2B; B2G,https://www.pochta.ru/,2
+35,МЕДСИ,Healthcare,,B2C; B2B2C,https://medsi.ru/,2
+36,СИБУР,IndustrialTech,,B2B,https://www.sibur.ru/,2
+37,Ростех,Healthcare; IndustrialTech; PropTech; Telecom,BigData; Интернет вещей; Искусственный интеллект и машинное обучение; Новые материалы,B2B; B2G,www.rostec.ru,2
+38,РЖД,Transport & Logistics,,B2C; B2B; B2G,https://company.rzd.ru/,2
+39,Кировский завод,IndustrialTech,,B2B; B2G,https://kzgroup.ru/,2
+40,Стратегические пункты управления,SpaceTech,,B2C; B2B,https://xn--90arhxr.xn--p1ai/,2
+41,Huawei,Telecom,Интернет вещей,B2C; B2B,http://www.huawei.com/,2
+42,Газпромбанк,FinTech,,B2C; B2B,https://www.gazprombank.ru/,2
+43,ПИК,PropTech,,B2C; B2B,https://www.pik.ru/,2
+44,Объединенная авиастроительная корпорация (ОАК),Transport & Logistics,Новые материалы,B2B; B2G,https://www.uacrussia.ru/,2
+45,Газпром,IndustrialTech,,B2B; B2B2C,https://www.gazprom.ru/,2
+46,Северсталь,IndustrialTech,,B2B; B2G,https://www.severstal.com,2
+47,Магнит,E-commerce; FoodTech; RetailTech,,B2C,https://magnit.ru/,2
+48,S7 Airlines,Transport & Logistics,,B2C; B2B,https://www.s7.ru/,2
+49,ЭФКО,FoodTech,Биотехнологии,B2C; B2B,https://www.efko.ru/,2
+50,Россети,CleanTech,,B2C; B2B; B2G,https://www.rosseti.ru/,2
+51,КАМАЗ,Transport & Logistics,Беспилотники; Искусственный интеллект и машинное обучение; Новые и портативные источники энергии,B2C; B2B; B2G,https://kamaz.ru/,2
+52,Система,E-commerce; FinTech; Healthcare; Telecom,,B2B,www.sistema.ru,2
+53,Райффайзенбанк,FinTech,,B2C; B2B,https://www.raiffeisen.ru/,2
+54,Роскосмос,SpaceTech,,B2B; B2G,https://www.roscosmos.ru/,2
+55,Ингосстрах,InsuranceTech,,B2C; B2B,www.ingos.ru/auto/osago/calc/?utm_source=2gis_context&utm_medium=cpm&utm_content=button&utm_campaign=ingos_osago_apr_may_2019; www.ingos.ru,2
+56,АЛРОСА,IndustrialTech,,B2C; B2B,http://www.alrosa.ru/,2
+57,Фармстандарт,Healthcare,,B2C; B2B,www.pharmstandart.ru,2
+58,ММК,IndustrialTech,,B2B,http://www.mmk.ru/,2
+59,ТМХ,IndustrialTech,,B2B; B2G,www.tmholding.ru,2
+60,,,,,www.ruselectronics.ru,2
+61,НЛМК,IndustrialTech,,B2B,https://nlmk.com/ru/,2
+62,,,,,www.unityofbuddhism.ru; www.tagree.ru; www.rosbank.ru; www.custody.ru,2
+63,ЛУКОЙЛ,IndustrialTech,,B2C; B2B,https://lukoil.ru/; https://www.lukoil.com/,2
+64,Актион-МЦФЭР,EdTech; LegalTech; Мedia & Communication,,B2C; B2B; B2G,https://action.group/,2
+65,,,,,www.interrao.ru,2
+66,ВкусВилл,E-commerce; FoodTech,,B2C; B2B,https://vkusvill.ru/,2
+67,УЗТМ-КАРТЭКС,IndustrialTech; Transport & Logistics,,B2B,https://uralmash-kartex.ru/,2
+68,ФОРЭНЕРГО,IndustrialTech,,B2B,https://forenergo.ru/,2
+69,Лента,E-commerce; RetailTech,,B2C; B2B,https://lenta.com/,2
