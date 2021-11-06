@@ -24,4 +24,4 @@ SGR создается, для получения и предоставлени�
 https://disk.yandex.ru/i/GLhisOko2FgEHQ
 
 # Презентация
-https://disk.yandex.ru/i/F06KcNVIrK6yWA
+https://disk.yandex.ru/i/x_Wgk1qdoA4Sdg
