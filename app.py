@@ -103,7 +103,7 @@ def query():
 
     #TODO сделать кандидатную модель по сервисам через matching_dict
     candidate_filter = data['start_up']['service'][0]
-    candidate_services = [k for k, v in matching_dict.items() if v == candidate_filter]
+    candidate_services = [k for k, v in matching_dict.items() if v.strip() == candidate_filter]
 
     placeholder_df_dict = {}
     score_series_dict = {}
@@ -164,7 +164,7 @@ def personal_query():
     data = request.json
 
     candidate_filter = data['start_up']['service'][0]
-    candidate_services = [k for k, v in matching_dict.items() if v == candidate_filter]
+    candidate_services = [k for k, v in matching_dict.items() if v.strip() == candidate_filter]
 
     placeholder_df_dict = {}
     score_series_dict = {}
