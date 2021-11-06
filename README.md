@@ -21,7 +21,7 @@ SGR создается, для получения и предоставлени�
 - Space_bandits
 
 # Документация
-https://disk.yandex.ru/i/31PgzplmUSNxhA
+https://disk.yandex.ru/i/GLhisOko2FgEHQ
 
 # Презентация
 https://disk.yandex.ru/i/F06KcNVIrK6yWA
