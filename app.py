@@ -196,9 +196,10 @@ def personal_query():
                     if column_name.find(elem) != -1:
                         startup_context[i] = 1
 
-    bandit_action = bandit_model.action(context=startup_context)
+    # bandit_action = bandit_model.action(context=startup_context)
     bandit_expectations = bandit_model.expected_values(context=startup_context)
     most_expected_actions = np.argsort(bandit_expectations)[-2:]
+    bandit_action = np.argsort(bandit_expectations)[-1]
 
     for key in placeholder_df_dict.keys():
         placeholder_df_dict[key] = placeholder_df_dict[key][~(placeholder_df_dict[key]['type'] == 'NoneType')]
